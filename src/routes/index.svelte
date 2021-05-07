@@ -6,12 +6,12 @@
 </script>
 
 <svelte:head>
-	<title>Design System</title>
+	<title>Development Systemm</title>
 </svelte:head>
 
 <section class="container p-8">
 	<h1 class="text-8xl my-8">
-		Design Systems
+		Development System
 	</h1>
 	<ul class="p-8 bg-gradient-to-r border-2 border-black bg-opacity-20">
 		<li class="list-disc list-inside text-xl">
@@ -31,6 +31,6 @@
 		</li>
 	</ul>
 	<p>	
-		<br/>Build using Sveltekit und Storybook &lt;3
+		<br/>
 	</p>
-</section>
+</section>Build using Sveltekit und Storybook &lt;3
