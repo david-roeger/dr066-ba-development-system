@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Button, Text } from './components'
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <br/>
         Build using React and Storybook :(
       </p>
+      <Button primary>Hallo</Button>
     </section>
   )
 }
