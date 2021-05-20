@@ -7,9 +7,9 @@ function sayHello() {
 }
 
 export function Button({primary, children, handleClick}) {
-    let primaryStyles = primary ? "hover:bg-blue-400" : "bg-white";
+    let primaryStyles = primary ? "hover:bg-green-300" : "bg-white";
     return (
-    <button onClick={() => sayHello()} className={`px-4 py-2 text-black border-2 border-black focus:outline-none ring-black ${primaryStyles}`}>
+    <button onClick={() => sayHello()} className={`px-md py-xs text-black border-2 border-black focus:outline-none ${primaryStyles}`}>
         <Text>{children}</Text>
     </button>)
 };
