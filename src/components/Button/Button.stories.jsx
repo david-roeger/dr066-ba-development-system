@@ -11,11 +11,12 @@ const Template = args => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   primary: false,
-  text: "Default"
+  children: "Default",
+  handleClick: () => alert('hallo')
 };
 
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  text: "Primary"
+  children: "Primary"
 };

@@ -1,5 +1,5 @@
 import React from 'react';
 
 export function Text(props) {
-    return <span>{props.children}</span>
+    return <span className="text-base">{props.children}</span>
 };

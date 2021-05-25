@@ -1,7 +1,10 @@
 import React from 'react'
-import { Button, Text } from './components'
+import { Button, Text, Light} from './components'
 
 function App() {
+  function callback() {
+    alert('Hello!');
+  }
   return (
     <section className="container p-md font-inter">
       <h1 className="text-xl my-md">
@@ -27,7 +30,8 @@ function App() {
       <p className="my-md">
         Build using React and Storybook :(
       </p>
-      <Button primary>Hallo</Button>
+      <Button primary handleClick={callback}>Hallo</Button>
+      <Light state={10}></Light>
     </section>
   )
 }
