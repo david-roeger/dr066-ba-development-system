@@ -9,3 +9,8 @@ export function Button({primary, children, handleClick}) {
         <Text>{children}</Text>
     </button>)
 };
+
+Button.defaultProps = {
+    primary: false,
+    handleClick: () => {console.log('click')}
+  };

@@ -1,12 +1,14 @@
-import React from 'react'
-import { Button, Text, Light} from './components'
+import React, { useState } from 'react'
+import { Button, IconContainer, Light } from './components'
 
 function App() {
-  function callback() {
-    alert('Hello!');
+  const [lightState, setLightState] = useState(20);
+  function updateLightState(e) {
+    setLightState(parseInt(e.target.value))
   }
+
   return (
-    <section className="container p-md font-inter">
+    <section className="container bg-gray-100 h-screen w-screen m-auto p-md font-inter">
       <h1 className="text-xl my-md">
         Development System
       </h1>
@@ -30,8 +32,12 @@ function App() {
       <p className="my-md">
         Build using React and Storybook :(
       </p>
-      <Button primary handleClick={callback}>Hallo</Button>
-      <Light state={10}></Light>
+      <Button primary>Hallo</Button>
+      <IconContainer >
+        <Light state={lightState}></Light>
+      </IconContainer>
+
+      <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
     </section>
   )
 }
