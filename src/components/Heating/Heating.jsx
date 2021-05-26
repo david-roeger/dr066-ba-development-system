@@ -8,7 +8,7 @@ export function Heating({state, outline, fillFrom, fillTo, base}) {
     state = (state / 100).toFixed(2)
 
     return <div>
-        <svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g className={`fill-current ${outline}`}>
                 <path d="M5 18C5 17.4477 5.44772 17 6 17H38C38.5523 17 39 17.4477 39 18C39 18.5523 38.5523 19 38 19H6C5.44772 19 5 18.5523 5 18Z" />
                 <path d="M5 37C5 36.4477 5.44772 36 6 36H38C38.5523 36 39 36.4477 39 37C39 37.5523 38.5523 38 38 38H6C5.44772 38 5 37.5523 5 37Z" />

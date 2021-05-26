@@ -1,4 +1,4 @@
-const theme = require('dr066-ba-design-token-builder');
+const theme = require('dr066-ba-design-token-builder/theme');
 
 module.exports = {
   purge: {
