@@ -2,10 +2,9 @@ import React from 'react';
 
 import { Text } from '../index'
 
-export function Button({primary, children, handleClick}) {
-    let primaryStyles = primary ? "hover:bg-green-300" : "hover:bg-orange-300";
+export function Button({children, handleClick}) {
     return (
-    <button onClick={() => handleClick()} className={`px-md py-xs text-black border-2 border-black focus:outline-none rounded-sm ${primaryStyles}`}>
+    <button onClick={() => handleClick()} className={`m-sm px-md py-xs rounded-sm bg-black text-white hover:bg-gray-500 active:bg-gray-700 border border-black focus:outline-none ring-width-0.5 ring-offset-2 ring-black focus:ring`}>
         <Text>{children}</Text>
     </button>)
 };

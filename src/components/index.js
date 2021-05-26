@@ -4,3 +4,6 @@ export { Icon } from './Icon/Icon';
 export { IconContainer } from './IconContainer/IconContainer';
 export { Light } from './Light/Light';
 export { Heating } from './Heating/Heating';
+export { Garage } from './Garage/Garage';
+export { Camera } from './Camera/Camera';
+export { Humidity } from './Humidity/Humidity';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, IconContainer, Light, Heating } from './components'
+import { Button, IconContainer, Light, Heating, Garage, Camera, Humidity } from './components'
 
 function App() {
   const [lightState, setLightState] = useState(20);
@@ -33,11 +33,21 @@ function App() {
         Build using React and Storybook :(
       </p>
       <Button primary>Hallo</Button>
+      <Button>Hallo</Button>
       <IconContainer >
         <Light state={lightState}></Light>
       </IconContainer>
       <IconContainer >
         <Heating state={lightState}></Heating>
+      </IconContainer>
+      <IconContainer >
+        <Garage state={lightState}></Garage>
+      </IconContainer>
+      <IconContainer >
+        <Camera state={lightState > 50}></Camera>
+      </IconContainer>
+      <IconContainer >
+        <Humidity state={lightState}></Humidity>
       </IconContainer>
 
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
