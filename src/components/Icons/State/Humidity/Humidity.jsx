@@ -24,8 +24,8 @@ export function Humidity({state, outline, base, fill}) {
 
 
 Humidity.defaultProps = {
+    state: 25,
     outline: 'text-gray-700',
     base: 'text-white',
     fill: 'text-blue-500'
   };
-

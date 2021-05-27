@@ -53,7 +53,6 @@ function App() {
         <DeviceIcon type="camera" color="zigbee"></DeviceIcon>
       </IconContainer >
 
-
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
     </section>
   )

@@ -26,6 +26,7 @@ export function Light({state, outline, base, fill}) {
 };
 
 Light.defaultProps = {
+    state: 25,
     outline: 'text-gray-700',
     base: 'text-white',
     fill: 'text-yellow-500'

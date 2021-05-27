@@ -5,6 +5,11 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
+    "@storybook/addon-viewport",
+    "@storybook/addon-controls",
+    "@storybook/addon-actions",
+    "@storybook/addon-docs",
+    "@storybook/theming",
+    "storybook-addon-pseudo-states"
   ]
 }
