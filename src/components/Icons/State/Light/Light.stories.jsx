@@ -5,7 +5,6 @@ import options from '../../../storybook-options';
 export default {
   component: Light,
   title: 'Icons/State/Light',
-  description: 'bla bla bla',
   argTypes: {
     state: {
       description: 'Icon state (0 - 100)', 
@@ -48,7 +47,7 @@ export default {
       ],
       control: { type: 'select' }
     }
-  },
+  }
 };
 
 const Template = args => <Light {...args} />;
