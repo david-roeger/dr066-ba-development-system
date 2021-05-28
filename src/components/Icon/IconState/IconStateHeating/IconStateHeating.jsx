@@ -1,11 +1,14 @@
 
 
 import React from 'react';
+import { colorClasses } from './IconStateHeating.config'
 
-export function IconStateHeating({state, outline, fillFrom, fillTo, base}) {
+export function IconStateHeating({state, colorClass }) {
     state = Math.max(0, state);
     state = Math.min(state, 100);
     state = (state / 100).toFixed(2)
+
+    let { outline, base, fillFrom, fillTo } = colorClasses[colorClass] || colorClasses.default;
 
     return <div>
         <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +52,6 @@ export function IconStateHeating({state, outline, fillFrom, fillTo, base}) {
 };
 
 IconStateHeating.defaultProps = {
-    outline: 'text-grey-700',
-    fillFrom: 'text-blue-500',
-    fillTo: 'text-red-500',
-    base: 'text-blue-500'
+    state: 25,
+    colorClass: 'default'
   };
