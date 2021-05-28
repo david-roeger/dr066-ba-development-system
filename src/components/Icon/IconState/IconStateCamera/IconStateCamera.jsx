@@ -2,17 +2,20 @@
 
 
 import React from 'react';
+import { colorClasses } from './IconStateCamera.config'
+export function IconStateCamera({state, colorClass}) {
 
-export function IconStateCamera({state, outline, base, fill}) {
-    console.log(state);
+    let { outline, base, fillLight, fillDark } = colorClasses[colorClass] || colorClasses.default;
+
     return <div>
         <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path className={`fill-current ${base}`} d="M23 13H9C6.79086 13 5 14.7909 5 17V29C5 31.2091 6.79086 33 9 33H23C25.2091 33 27 31.2091 27 29V17C27 14.7909 25.2091 13 23 13Z" fill="#DADDE3"/>
-            <path className={`fill-current ${base}`} d="M31.3501 18.3883L37.3501 13.2581C37.7699 12.8992 38.4011 12.9485 38.76 13.3682C38.9149 13.5494 39 13.7798 39 14.0181V31.982C39 32.5342 38.5523 32.982 38 32.982C37.762 32.982 37.5317 32.897 37.3507 32.7425L31.3507 27.6201C31.1282 27.4301 31 27.1522 31 26.8596V19.1484C31 18.856 31.1279 18.5783 31.3501 18.3883Z" fill="#DADDE3"/>
+            <path className={`fill-current ${fillLight}`} d="M23 13H9C6.79086 13 5 14.7909 5 17V29C5 31.2091 6.79086 33 9 33H23C25.2091 33 27 31.2091 27 29V17C27 14.7909 25.2091 13 23 13Z" fill="#DADDE3"/>
+            <path className={`fill-current ${fillLight}`} d="M31.3501 18.3883L37.3501 13.2581C37.7699 12.8992 38.4011 12.9485 38.76 13.3682C38.9149 13.5494 39 13.7798 39 14.0181V31.982C39 32.5342 38.5523 32.982 38 32.982C37.762 32.982 37.5317 32.897 37.3507 32.7425L31.3507 27.6201C31.1282 27.4301 31 27.1522 31 26.8596V19.1484C31 18.856 31.1279 18.5783 31.3501 18.3883Z" fill="#DADDE3"/>
         
             { state && 
                 <g>
-                    <circle className={`fill-current ${fill} animate-pulse`} x="16" y="23" cx="16" cy="23" r="2" fill="#F96D5E"/>
+                    <circle className={`fill-current ${base} animate-pulse`} x="16" y="23" cx="16" cy="23" r="4" fill="#F96D5E"/>
+                    <circle className={`fill-current ${fillDark} animate-pulse`} x="16" y="23" cx="16" cy="23" r="2" fill="#F96D5E"/>
                     <path className={`fill-current ${outline}`} d="M16 29C12.6863 29 10 26.3137 10 23C10 19.6863 12.6863 17 16 17C19.3137 17 22 19.6863 22 23C22 26.3137 19.3137 29 16 29ZM16 27C18.2091 27 20 25.2091 20 23C20 20.7909 18.2091 19 16 19C13.7909 19 12 20.7909 12 23C12 25.2091 13.7909 27 16 27Z" fill="#3A3A3A"/>
                 </g>
             }
@@ -26,7 +29,6 @@ export function IconStateCamera({state, outline, base, fill}) {
 };
 
 IconStateCamera.defaultProps = {
-    outline: 'text-gray-700',
-    fill: 'text-red-500',
-    base: 'text-white'
+    state: false,
+    colorClass: 'default'
   };
