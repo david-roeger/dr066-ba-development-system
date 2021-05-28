@@ -12,5 +12,5 @@ export function Button({children, handleClick}) {
 
 Button.defaultProps = {
     children: 'Button Text',
-    handleClick: () => {console.log('click')}
+    handleClick: () => {}
 };

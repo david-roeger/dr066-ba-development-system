@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export function Heating({state, outline, fillFrom, fillTo, base}) {
+export function IconStateHeating({state, outline, fillFrom, fillTo, base}) {
     state = Math.max(0, state);
     state = Math.min(state, 100);
     state = (state / 100).toFixed(2)
@@ -48,7 +48,7 @@ export function Heating({state, outline, fillFrom, fillTo, base}) {
     </div>
 };
 
-Heating.defaultProps = {
+IconStateHeating.defaultProps = {
     outline: 'text-grey-700',
     fillFrom: 'text-blue-500',
     fillTo: 'text-red-500',

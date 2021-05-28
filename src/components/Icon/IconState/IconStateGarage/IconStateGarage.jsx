@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export function Garage({state, outline, base, fill}) {
+export function IconStateGarage({state, outline, base, fill}) {
     state = Math.max(0, state);
     state = Math.min(state, 100);
     state = (state / 100).toFixed(2)
@@ -29,7 +29,7 @@ export function Garage({state, outline, base, fill}) {
     </div>
 };
 
-Garage.defaultProps = {
+IconStateGarage.defaultProps = {
     outline: 'text-gray-700',
     fill: 'text-gray-300',
     base: 'text-white'

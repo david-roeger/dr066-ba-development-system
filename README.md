@@ -2,7 +2,12 @@
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Update design tokens from repository
+```bash
+npm run tokens
+```
+
+Once you've created a project and installed dependencies with `npm install`, start a development server:
 
 ```bash
 npm run storybook
@@ -13,4 +18,3 @@ npm run storybook
 ```bash
 npm run build
 ```
-

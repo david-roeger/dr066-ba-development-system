@@ -5,20 +5,16 @@ export function Text({size, children}) {
     if(size === "sm") { 
         textStyle = "text-sm leading-sm"
     } else if(size === "xl") {
-        textStyle = "text-base leading-base"
-    } else if(size === "base") {
         textStyle = "text-xl leading-xl"
+    } else if(size === "base") {
+        textStyle = "text-base leading-base"
     }
-    return <div><p className={textStyle}>{children}</p>
-    <p className={textStyle}>{children}</p>
-    <p className={textStyle}>{children}</p>
-    <p className={textStyle}>{children}</p>
-    </div>
+    return <span className={textStyle}>{children}</span>
 };
 
 
 Text.defaultProps = {
     size: "base",
-    children: 'Beispiel Text'
+    children: "Text"
   };
 

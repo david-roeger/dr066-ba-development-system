@@ -1,4 +1,4 @@
-let colors = {
+export let colorValues = {
     300: [
         "text-gray-300",
         "text-pink-300",
@@ -32,6 +32,4 @@ let colors = {
     ]
 }
 
-export default {
-    colors
-}
+export let colorNames = ['Default', 'zwave', 'enocean', 'zigbee']

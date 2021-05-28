@@ -1,17 +1,10 @@
 import React from 'react';
 import svg from "./device.svg"
-//import token from "dr066-ba-design-token-builder/icons";
 
-export function DeviceIcon({type, color}) {
-    let token = {
-        iconReference: {
-            types: [],
-            colors: []
-        }
-    }
-    let types = token.iconReference.types;
-    let colors = token.iconReference.colors;
-    console.log(type, types);
+export function IconDevice({type, color}) {
+
+    let types = ['Default', 'heating', 'light', 'electricity', 'garage', 'camera'];
+    let colors = ['Default', 'zwave', 'enocean', 'zigbee'];
 
     let typeIndex = types.findIndex((t) => t === type);
     let colorIndex = colors.findIndex((c) => c === color);
@@ -26,7 +19,7 @@ export function DeviceIcon({type, color}) {
 };
 
 
-DeviceIcon.defaultProps = {
+IconDevice.defaultProps = {
     type: 'Default',
     color: 'Default',
   };

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Humidity } from '../../../index';
-import options from '../../../storybook-options';
+import { IconDevice } from '../../index';
+import { colorNames } from '../../storybook-options';
 
 export default {
-    component: Humidity,
-    title: 'Icons/State/Humidity',
-    argTypes: {
+    component: IconDevice,
+    title: 'Icon/Device',
+    /*argTypes: {
         state: {
             description: 'Icon state (0 - 100)', 
             table: {
@@ -45,19 +45,15 @@ export default {
             ],
             control: { type: 'select' }
         }
-    },
+    },*/
 };
 
-const Template = args => <Humidity {...args} />;
+const Template = args => <IconDevice {...args} />;
 
 export const Default = Template.bind({});
 
-export const Low = Template.bind({});
-Low.args = {
-  state: 0
-};
-
-export const High = Template.bind({});
-High.args = {
-  state: 100
-};
+export const Heating = Template.bind({});
+Heating.args = {
+    type: "heating",
+    color: "zigbee"
+}

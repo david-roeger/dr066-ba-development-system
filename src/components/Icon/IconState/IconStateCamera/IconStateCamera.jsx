@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-export function Camera({state, outline, base, fill}) {
+export function IconStateCamera({state, outline, base, fill}) {
     console.log(state);
     return <div>
         <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ export function Camera({state, outline, base, fill}) {
     </div>
 };
 
-Camera.defaultProps = {
+IconStateCamera.defaultProps = {
     outline: 'text-gray-700',
     fill: 'text-red-500',
     base: 'text-white'

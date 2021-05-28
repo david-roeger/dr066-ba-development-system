@@ -1,14 +1,13 @@
-
-
-
-
 import React from 'react';
+import { colorClasses } from './IconStateHumidity.config'
 
-export function Humidity({state, outline, base, fill}) {
+export function IconStateHumidity({state, colorClass}) {
     state = Math.max(0, state);
     state = Math.min(state, 100);
     state = (state / 100).toFixed(2)
-    
+
+    let { outline, base, fill } = colorClasses[colorClass] || colorClasses.default;
+
     return <div>
         <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path className={`fill-current ${base}`} d="M4 23C4 26.866 7.13401 30 11 30H33C36.866 30 40 26.866 40 23C40 19.134 36.866 16 33 16C32.1655 16 31.3651 16.146 30.6229 16.4139C29.5118 12.7038 26.0717 10 22 10C17.9283 10 14.4882 12.7038 13.3771 16.4139C12.6349 16.146 11.8345 16 11 16C7.13401 16 4 19.134 4 23Z" fill="white"/>
@@ -23,9 +22,7 @@ export function Humidity({state, outline, base, fill}) {
 };
 
 
-Humidity.defaultProps = {
+IconStateHumidity.defaultProps = {
     state: 25,
-    outline: 'text-gray-700',
-    base: 'text-white',
-    fill: 'text-blue-500'
+    colorClass: 'default'
   };

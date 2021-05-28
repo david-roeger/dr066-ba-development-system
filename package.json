@@ -5,9 +5,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "storybook": "start-storybook -p 6006 --no-manager-cache",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "update-tokens": "npm update dr066-ba-design-token-builder"
+    "tokens": "npm update dr066-ba-design-token-builder"
   },
   "dependencies": {
     "@storybook/addons": "^6.2.9",

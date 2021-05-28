@@ -1,12 +1,15 @@
 
 
 import React from 'react';
+import { colorClasses } from './IconStateLight.config'
 
-export function Light({state, outline, base, fill}) {
+export function IconStateLight({state, colorClass}) {
     state = Math.max(0, state);
     state = Math.min(state, 100);
     state = (state / 100).toFixed(2)
-    
+
+    let { outline, base, fill } = colorClasses[colorClass] || colorClasses.default;
+
     return <div>
         <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path className={`fill-current ${outline}`} d="M29 31.7479C32.0281 29.5695 34 26.0151 34 22C34 15.3726 28.6274 10 22 10C15.3726 10 10 15.3726 10 22C10 26.0151 11.9719 29.5695 15 31.7479V35C15 37.2091 16.7909 39 19 39H25C27.2091 39 29 37.2091 29 35V31.7479Z" fill="#3A3A3A"/>
@@ -25,9 +28,7 @@ export function Light({state, outline, base, fill}) {
     </div>
 };
 
-Light.defaultProps = {
+IconStateLight.defaultProps = {
     state: 25,
-    outline: 'text-gray-700',
-    base: 'text-white',
-    fill: 'text-yellow-500'
+    colorClass: 'default'
   };

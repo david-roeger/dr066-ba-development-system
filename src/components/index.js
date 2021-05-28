@@ -1,9 +1,9 @@
-export { Button } from './Button/Button';
 export { Text } from './Text/Text';
-export { DeviceIcon } from './DeviceIcon/DeviceIcon';
+export { Button } from './Button/Button';
 export { IconContainer } from './IconContainer/IconContainer';
-export { Light } from './Icons/State/Light/Light';
-export { Heating } from './Icons/State/Heating/Heating';
-export { Garage } from './Icons/State/Garage/Garage';
-export { Camera } from './Icons/State/Camera/Camera';
-export { Humidity } from './Icons/State/Humidity/Humidity';
+export { IconDevice } from './Icon/IconDevice/IconDevice';
+export { IconStateLight } from './Icon/IconState/IconStateLight/IconStateLight';
+export { IconStateHeating } from './Icon/IconState/IconStateHeating/IconStateHeating';
+export { IconStateGarage } from './Icon/IconState/IconStateGarage/IconStateGarage';
+export { IconStateCamera } from './Icon/IconState/IconStateCamera/IconStateCamera';
+export { IconStateHumidity } from './Icon/IconState/IconStateHumidity/IconStateHumidity';
