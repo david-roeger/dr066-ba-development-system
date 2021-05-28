@@ -35,12 +35,27 @@ const Template = args => <IconStateHeating {...args} />;
 
 export const Default = Template.bind({});
 
-export const Low = Template.bind({});
-Low.args = {
+export const Cold = Template.bind({});
+Cold.args = {
   state: 0
 };
 
-export const High = Template.bind({});
-High.args = {
+export const Hot = Template.bind({});
+Hot.args = {
   state: 100
+};
+
+export const Zwave = Template.bind({});
+Zwave.args = {
+  colorClass: 'zwave',
+};
+
+export const Enocean = Template.bind({});
+Enocean.args = {
+  colorClass: 'enocean',
+};
+
+export const Zigbee = Template.bind({});
+Zigbee.args = {
+  colorClass: 'zigbee',
 };

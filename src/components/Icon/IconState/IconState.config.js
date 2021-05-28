@@ -4,23 +4,26 @@ export let colorClasses = {
         //set in component
     },
     zwave: {
-        outline: 'text-zwave-700',
+        outline: 'text-gray-700',
         base: 'text-white',
-        fill: 'text-zwave-300',
+        fill: 'text-zwave-500',
+        fillLight: 'text-zwave-300',
         fillFrom: 'text-white',
-        fillTo: 'text-zwave-300'
+        fillTo: 'text-zwave-500'
     },
     enocean: {
-        outline: 'text-enocean-700',
+        outline: 'text-gray-700',
         base: 'text-white',
-        fill: 'text-enocean-300',
+        fill: 'text-enocean-500',
+        fillLight: 'text-enocean-300',
         fillFrom: 'text-white',
-        fillTo: 'text-enocean-300' 
+        fillTo: 'text-enocean-500' 
     },
     zigbee: {
-        outline: 'text-zigbee-700',
+        outline: 'text-gray-700',
         base: 'text-white',
-        fill: 'text-zigbee-300',
+        fill: 'text-zigbee-500',
+        fillLight: 'text-zigbee-300',
         fillFrom: 'text-white',
         fillTo: 'text-zigbee-300'
     }

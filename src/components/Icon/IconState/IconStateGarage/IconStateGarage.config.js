@@ -4,7 +4,7 @@ let cc = { ...iconStateColorClasses }
 cc.default = {
     outline: 'text-gray-700',
     base: 'text-white',
-    fill: 'text-gray-300',
+    fillLight: 'text-gray-300'
 }
 
 export let colorClasses = cc

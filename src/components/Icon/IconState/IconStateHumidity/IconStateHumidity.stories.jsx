@@ -44,3 +44,18 @@ export const High = Template.bind({});
 High.args = {
   state: 100
 };
+
+export const Zwave = Template.bind({});
+Zwave.args = {
+  colorClass: 'zwave',
+};
+
+export const Enocean = Template.bind({});
+Enocean.args = {
+  colorClass: 'enocean',
+};
+
+export const Zigbee = Template.bind({});
+Zigbee.args = {
+  colorClass: 'zigbee',
+};
