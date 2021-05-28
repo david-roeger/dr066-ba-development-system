@@ -1,12 +1,14 @@
 
 
 import React from 'react';
-
-export function IconStateGarage({state, outline, base, fill}) {
+import { colorClasses } from './IconStateGarage.config'
+export function IconStateGarage({state, colorClass }) {
     state = Math.max(0, state);
     state = Math.min(state, 100);
     state = (state / 100).toFixed(2)
     
+    let { outline, base, fill } = colorClasses[colorClass] || colorClasses.default;
+
     return <div>
        <svg width="44" height="46" viewBox="0 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path className={`fill-current ${base}`} d="M22 6L39 18.5499V40H35V19.5713H9V40H5V17.5284L22 6Z" fill="white"/>
@@ -30,7 +32,6 @@ export function IconStateGarage({state, outline, base, fill}) {
 };
 
 IconStateGarage.defaultProps = {
-    outline: 'text-gray-700',
-    fill: 'text-gray-300',
-    base: 'text-white'
-  };
+    state: 25,
+    colorClass: 'default'
+};
