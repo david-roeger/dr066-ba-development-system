@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text, Button, IconContainer, DeviceIcon, Light, Heating, Garage, Camera, Humidity } from './components'
+import { Text, Button, IconContainer, IconDevice, IconStateCamera, IconStateHeating, IconStateHumidity, IconStateLight, IconStateGarage } from './components'
 
 function App() {
   const [lightState, setLightState] = useState(20);
@@ -37,22 +37,22 @@ function App() {
       <Button primary>Hallo</Button>
       <Button>Hallo</Button>
       <IconContainer >
-        <Light state={lightState}></Light>
+        <IconStateLight state={lightState}></IconStateLight>
       </IconContainer>
       <IconContainer >
-        <Heating state={lightState}></Heating>
+        <IconStateHeating state={lightState}></IconStateHeating>
       </IconContainer>
       <IconContainer >
-        <Garage state={lightState}></Garage>
+        <IconStateGarage state={lightState}></IconStateGarage>
       </IconContainer>
       <IconContainer >
-        <Camera state={lightState > 50}></Camera>
+        <IconStateCamera state={lightState > 50}></IconStateCamera>
       </IconContainer>
       <IconContainer >
-        <Humidity state={lightState}></Humidity>
+        <IconStateHumidity state={lightState}></IconStateHumidity>
       </IconContainer>
       <IconContainer >
-        <DeviceIcon type="camera" color="zigbee"></DeviceIcon>
+        <IconDevice ></IconDevice>
       </IconContainer >
 
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>

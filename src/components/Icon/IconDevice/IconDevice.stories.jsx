@@ -1,59 +1,59 @@
 import React from 'react';
 import { IconDevice } from '../../index';
-import { colorNames } from '../../storybook-options';
+import { icons } from './IconDevice.config'
 
+let types = Object.keys(icons);
+let colorClasses = Object.keys(icons[types[0]]);
+
+console.log(types, colorClasses);
 export default {
     component: IconDevice,
     title: 'Icon/Device',
-    /*argTypes: {
-        state: {
-            description: 'Icon state (0 - 100)', 
-            table: {
-                type: { summary: 'number' },
-            },
-            control: { 
-            type: 'range', 
-            min: 0, 
-            max: 100, 
-            step: 1 
-            },
-        },
-        outline: {
-            description: 'Outline color (text-color-*)', 
+    argTypes: {
+        type: {
+            description: 'Icon type', 
             table: {
                 type: { summary: 'string' },
             },
-            options: options.colors[700],
+            options: types,
             control: { type: 'select' },
         },
-        base: {
-            description: 'Base color (text-color-*)', 
+        colorClass: {
+            description: 'Color Class (from config)', 
             table: {
                 type: { summary: 'string' },
             },
-            options: options.colors.primary,
-            control: { type: 'select' }
+            options: colorClasses,
+            control: { type: 'select' },
         },
-        fill: {
-            description: 'Fill color (text-color-*)', 
-            table: {
-                type: { summary: 'string' },
-            },
-            options: [
-                ...options.colors.secondary,
-                ...options.colors[300]
-            ],
-            control: { type: 'select' }
-        }
-    },*/
+    },
 };
 
 const Template = args => <IconDevice {...args} />;
 
 export const Default = Template.bind({});
 
+export const Camera = Template.bind({});
+Camera.args = {
+    type: "camera",
+}
+
+export const Electricity = Template.bind({});
+Electricity.args = {
+    type: "heating",
+}
+
+export const Garage = Template.bind({});
+Garage.args = {
+    type: "garage",
+}
+
 export const Heating = Template.bind({});
 Heating.args = {
     type: "heating",
-    color: "zigbee"
+}
+
+export const Light = Template.bind({});
+Light.args = {
+    type: "light",
 }
