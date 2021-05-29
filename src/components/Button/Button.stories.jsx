@@ -4,6 +4,13 @@ import { Button } from '../index';
 export default {
   title: 'Button',
   component: Button,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Component.',
+      },
+    },
+  },
   argTypes: {
         children: {
             description: 'Text',

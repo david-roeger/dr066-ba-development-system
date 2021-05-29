@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text, Button, IconContainer, IconDevice, IconStateCamera, IconStateHeating, IconStateHumidity, IconStateLight, IconStateGarage } from './components'
+import { Text, Button, StateIconContainer, StateIconLight, DeviceIconContainer, DeviceIcon} from './components'
 
 function App() {
   const [lightState, setLightState] = useState(20);
@@ -36,24 +36,13 @@ function App() {
       </p>
       <Button primary>Hallo</Button>
       <Button>Hallo</Button>
-      <IconContainer >
-        <IconStateLight state={lightState}></IconStateLight>
-      </IconContainer>
-      <IconContainer >
-        <IconStateHeating state={lightState}></IconStateHeating>
-      </IconContainer>
-      <IconContainer >
-        <IconStateGarage state={lightState}></IconStateGarage>
-      </IconContainer>
-      <IconContainer >
-        <IconStateCamera state={lightState > 50}></IconStateCamera>
-      </IconContainer>
-      <IconContainer >
-        <IconStateHumidity state={lightState}></IconStateHumidity>
-      </IconContainer>
-      <IconContainer >
-        <IconDevice ></IconDevice>
-      </IconContainer >
+      <StateIconContainer >
+        <StateIconLight state={lightState}></StateIconLight>
+      </StateIconContainer>
+      <DeviceIconContainer>
+        <DeviceIcon></DeviceIcon>
+      </DeviceIconContainer>
+
 
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
     </section>

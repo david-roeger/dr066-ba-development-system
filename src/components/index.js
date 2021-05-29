@@ -1,9 +1,10 @@
 export { Text } from './Text/Text';
 export { Button } from './Button/Button';
-export { IconContainer } from './IconContainer/IconContainer';
-export { IconDevice } from './Icon/IconDevice/IconDevice';
-export { IconStateLight } from './Icon/IconState/IconStateLight/IconStateLight';
-export { IconStateHeating } from './Icon/IconState/IconStateHeating/IconStateHeating';
-export { IconStateGarage } from './Icon/IconState/IconStateGarage/IconStateGarage';
-export { IconStateCamera } from './Icon/IconState/IconStateCamera/IconStateCamera';
-export { IconStateHumidity } from './Icon/IconState/IconStateHumidity/IconStateHumidity';
+export { DeviceIconContainer } from './Icons/Device/DeviceIconContainer/DeviceIconContainer';
+export { DeviceIcon } from './Icons/Device/Icons/DeviceIcon/DeviceIcon';
+export { StateIconContainer } from './Icons/State/StateIconContainer/StateIconContainer';
+export { StateIconLight } from './Icons/State/Icons/StateIconLight/StateIconLight';
+export { StateIconHeating } from './Icons/State/Icons/StateIconHeating/StateIconHeating'
+export { StateIconGarage } from './Icons/State/Icons/StateIconGarage/StateIconGarage';
+export { StateIconCamera } from './Icons/State/Icons/StateIconCamera/StateIconCamera';
+export { StateIconHumidity } from './Icons/State/Icons/StateIconHumidity/StateIconHumidity';

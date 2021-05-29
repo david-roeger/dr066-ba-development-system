@@ -6,6 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
+    "storybook-docs": "start-storybook --docs --no-manager-cache",
     "build-storybook": "build-storybook",
     "tokens": "npm update dr066-ba-design-token-builder"
   },
