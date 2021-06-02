@@ -1,10 +1,8 @@
 import React from 'react';
 import { DeviceIcon, DeviceIconContainer } from '../../../../index';
-import { icons } from './DeviceIcon.config'
+import { types, colorClasses } from './DeviceIcon.config'
 
-let types = Object.keys(icons);
-let colorClasses = Object.keys(icons[types[0]]);
-
+console.log(colorClasses)
 export default {
     component: DeviceIcon,
     title: 'Icons/Device/Icons/DeviceIcon',
@@ -18,7 +16,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'Device Icon Component. <br> The icons are dynamically imported and exported from the <code>./assets</code> into <code>DeviceIcons.config.js</code>. <br> Icon must be inside <code>&lt;DeviceIconContainer&gt;</code> Element.',
+                component: 'Device Icon Component. <br> The icons are referenced from the <code>./public/deviceicons/*</code>. <br> Icon Values are defined in config file <br> Icon must be inside <code>&lt;DeviceIconContainer&gt;</code> Element.',
             },
         },
     },
