@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import { Text, Button, StateIconContainer, StateIconLight, DeviceIconContainer, DeviceIcon} from './components'
+import { Text, Button} from './components'
+import { StateIconContainer, StateIconLight} from './components'
+import { DeviceIconContainer, DeviceIcon} from './components'
+import { Nav } from './components'
 
 function App() {
   const [lightState, setLightState] = useState(20);
@@ -42,7 +45,7 @@ function App() {
       <DeviceIconContainer>
         <DeviceIcon></DeviceIcon>
       </DeviceIconContainer>
-
+      <Nav></Nav>
 
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
     </section>
