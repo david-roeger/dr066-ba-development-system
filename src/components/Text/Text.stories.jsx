@@ -1,10 +1,20 @@
 import React from 'react';
 import { Text } from '../index';
+import { colorClasses } from './Text.config'
 
 export default {
     component: Text,
     title: 'Text',
     argTypes: {
+        colorClass: {
+            description: 'Text Color', 
+            table: {
+                type: { 
+                    summary: 'string',
+                 },
+              },
+            options: colorClasses,
+        },
         size: {
             description: 'Text Size',
             table: {
@@ -37,7 +47,8 @@ const Template = args => <Text {...args} />;
 export const Default = Template.bind({});
 Default.args = {};
 
-export const sm = Template.bind({});
+export const sm = Template.bind({
+});
 sm.args = {
     size: "sm"
 }

@@ -1,7 +1,10 @@
 import React from 'react';
+import { colorClasses } from './Text.config'
 
-export function Text({size, children}) {
-    let textStyle ='';
+export function Text({colorClass, size, children}) {
+    console.log(colorClasses, colorClass)
+    console.log(colorClasses[colorClass])
+    let textStyle = '';
     if(size === "sm") { 
         textStyle = "text-sm leading-sm"
     } else if(size === "xl") {
@@ -9,12 +12,13 @@ export function Text({size, children}) {
     } else if(size === "base") {
         textStyle = "text-base leading-base"
     }
-    return <span className={textStyle}>{children}</span>
+    return <span className={`${textStyle} ${colorClasses[colorClass]}`}>{children}</span>
 };
 
 
 Text.defaultProps = {
+    colorClass: 'black',
     size: "base",
-    children: "Text"
+    children: "Text",
   };
 
