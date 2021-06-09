@@ -26,7 +26,7 @@ const customViewports = {
   xl: {
     name: 'xl | desktop',
     styles: {
-      width: '1404px',
+      width: '1440px',
       height: '1024',
     },
   },
