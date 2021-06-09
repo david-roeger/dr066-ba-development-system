@@ -1,9 +1,16 @@
 import React from 'react';
-import { Nav } from '../../index';
+import { Nav, Grid } from '../../index';
 
 export default {
     component: Nav,
     title: 'Navigation/Nav',
+    decorators: [
+        (Story) => (
+            <Grid>
+                {Story()}
+            </Grid>
+        ),
+      ],
     parameters: {
         docs: {
             description: {
