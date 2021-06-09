@@ -2,8 +2,7 @@ import React from 'react';
 import { colorClasses } from './Text.config'
 
 export function Text({colorClass, size, children}) {
-    console.log(colorClasses, colorClass)
-    console.log(colorClasses[colorClass])
+
     let textStyle = '';
     if(size === "sm") { 
         textStyle = "text-sm leading-sm"
