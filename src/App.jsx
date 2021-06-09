@@ -3,7 +3,9 @@ import { Text, Button} from './components'
 import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
 import { Nav } from './components'
+import { Grid } from './components'
 
+import * as tokens from "dr066-ba-design-token-builder/tokens"
 function App() {
   const [lightState, setLightState] = useState(20);
   function updateLightState(e) {
@@ -11,7 +13,7 @@ function App() {
   }
 
   return (
-    <section className="container bg-gray-100 h-screen w-screen m-auto p-md font-inter text-basetext-gray-700">
+    <section className="bg-gray-100 h-screen w-screen m-auto font-inter text-basetext-gray-700">
       <h1 className="my-md">
         <Text size="xl">Build Components</Text>
       </h1>
@@ -45,9 +47,13 @@ function App() {
       <DeviceIconContainer>
         <DeviceIcon></DeviceIcon>
       </DeviceIconContainer>
-      <Nav></Nav>
 
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
+  
+      <Grid>
+        <Nav></Nav>
+      </Grid>
+
     </section>
   )
 }
