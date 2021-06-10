@@ -1,11 +1,11 @@
 import React from 'react';
-import { StateIconHumidity, StateIconContainer } from '../../../../index';
+import { StateIconHeating, StateIconContainer } from '../../../../index';
 
-import { colorClasses } from './StateIconHumidity.config'
+import { colorClasses } from './StateIconHeating.config'
 
 export default {
-    component: StateIconHumidity,
-    title: 'Icons/State/Icons/Humidity',
+    component: StateIconHeating,
+    title: 'Icons/State/SubComponents/StateIconHeating',
     decorators: [
       (Story) => (
           <StateIconContainer>
@@ -16,7 +16,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'State Icon Humidity Component <br> The SVG is directly manipulated inside the component. <br> Icon Must be wrapped inside <code>&lt;StateIconContainer&gt;</code> Element.',
+                component: 'State Icon Heating Component <br> The SVG is directly manipulated inside the component. <br> Icon Must be wrapped inside <code>&lt;StateIconContainer&gt;</code> Element.',
             },
         },
     },
@@ -44,17 +44,17 @@ export default {
     },
 };
 
-const Template = args => <StateIconHumidity {...args} />;
+const Template = args => <StateIconHeating {...args} />;
 
 export const Default = Template.bind({});
 
-export const Low = Template.bind({});
-Low.args = {
+export const Cold = Template.bind({});
+Cold.args = {
   state: 0
 };
 
-export const High = Template.bind({});
-High.args = {
+export const Hot = Template.bind({});
+Hot.args = {
   state: 100
 };
 

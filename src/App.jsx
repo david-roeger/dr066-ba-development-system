@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Text, Button} from './components'
 import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
-import { Nav } from './components'
+import { Navigation } from './components'
 import { Grid } from './components'
 
 
@@ -54,7 +54,7 @@ function App() {
   
       <Grid>
         <BrowserRouter>
-          <Nav></Nav>
+          <Navigation></Navigation>
         </BrowserRouter>
       </Grid>
 

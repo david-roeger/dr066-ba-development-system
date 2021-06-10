@@ -1,6 +1,6 @@
 import React from 'react';
 import { DeviceIconContainer } from '../../../index';
-import { Default as DeviceIcon } from '../Icons/DeviceIcon/DeviceIcon.stories';
+import { Default as DeviceIcon } from '../SubComponents/DeviceIcon/DeviceIcon.stories';
 
 export default {
     component: DeviceIconContainer,

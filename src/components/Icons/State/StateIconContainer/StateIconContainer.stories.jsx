@@ -5,7 +5,6 @@ import { On as StateIconLight } from '../Icons/StateIconLight/StateIconLight.sto
 export default {
     component: StateIconContainer,
     title: 'Icons/State/StateIconContainer',
-    subcomponents: { StateIconLight },
     parameters: {
         docs: {
             description: {

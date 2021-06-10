@@ -4,7 +4,7 @@ import { colorClasses } from './StateIconCamera.config'
 
 export default {
     component: StateIconCamera,
-    title: 'Icons/State/Icons/StateIconCamera',
+    title: 'Icons/State/SubComponents/StateIconCamera',
     decorators: [
       (Story) => (
           <StateIconContainer>

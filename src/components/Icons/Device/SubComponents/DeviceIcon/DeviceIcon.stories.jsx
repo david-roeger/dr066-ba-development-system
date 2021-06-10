@@ -5,7 +5,7 @@ import { types, colorClasses } from './DeviceIcon.config'
 console.log(colorClasses)
 export default {
     component: DeviceIcon,
-    title: 'Icons/Device/Icons/DeviceIcon',
+    title: 'Icons/Device/SubComponents/DeviceIcon',
     decorators: [
         (Story) => (
             <DeviceIconContainer>

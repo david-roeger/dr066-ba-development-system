@@ -1,10 +1,10 @@
 import React from 'react';
-import { Nav, Grid } from '../../index';
+import { Navigation, Grid } from '../../index';
 import { BrowserRouter } from 'react-router-dom'
 
 export default {
-    component: Nav,
-    title: 'Navigation/Nav',
+    component: Navigation,
+    title: 'Navigation/Navigation',
     decorators: [
         (Story) => (
             <BrowserRouter>
@@ -39,6 +39,6 @@ export default {
     }
 };
 
-const Template = args => <Nav {...args} />;
+const Template = args => <Navigation {...args} />;
 
 export const Default = Template.bind({});

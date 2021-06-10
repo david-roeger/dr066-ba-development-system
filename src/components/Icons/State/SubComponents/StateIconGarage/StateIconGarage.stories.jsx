@@ -5,7 +5,7 @@ import { colorClasses } from './StateIconGarage.config'
 
 export default {
     component: StateIconGarage,
-    title: 'Icons/State/Icons/StateIconGarage',
+    title: 'Icons/State/SubComponents/StateIconGarage',
     decorators: [
       (Story) => (
           <StateIconContainer>

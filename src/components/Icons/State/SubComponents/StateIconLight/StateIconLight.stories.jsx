@@ -5,7 +5,7 @@ import { colorClasses } from './StateIconLight.config'
 
 export default {
   component: StateIconLight,
-  title: 'Icons/State/Icons/StateIconLight',
+  title: 'Icons/State/SubComponents/StateIconLight',
   decorators: [
     (Story) => (
         <StateIconContainer>
