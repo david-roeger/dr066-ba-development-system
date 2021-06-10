@@ -6,7 +6,7 @@ export default {
     title: 'Navigation/Nav',
     decorators: [
         (Story) => (
-            <Grid>
+            <Grid full>
                 {Story()}
             </Grid>
         ),
@@ -14,8 +14,24 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'Nav Icon SVG. <br> The icons are referenced from <code>./public/NavIcons/*</code>. <br> Icon Values are defined in config file <br> Icon must be inside <code>&lt;NavIconButton&gt;</code> Element.',
+                component: 'Renders <code>&lt;NavIconButton&gt;</code> elements inside Container. </br> Default Values are defined in config file',
             },
+        },
+        layout: 'fullscreen'
+    },
+    argTypes: {
+        children: {
+            description: 'NavIconButtons',
+            type: {
+                required: true 
+            },
+            table: {
+                type: { summary: '[NavIconButton]' },
+                default: '-'
+            },
+            control: {
+                control: false
+            }
         },
     }
 };

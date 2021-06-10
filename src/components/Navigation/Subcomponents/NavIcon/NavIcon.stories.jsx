@@ -14,9 +14,9 @@ export default {
     },
     decorators: [
         (Story) => (
-            <NavIconButton>
+            <div className="p-md bg-black">
                 {Story()}
-            </NavIconButton>
+            </div>
         ),
       ],
     argTypes: {

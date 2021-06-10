@@ -1,1 +1,1 @@
-export let types = ["default", "camera", "electricity", "garage", "heating", "light"];
+export let types = ["home", "devices", "rooms", "automations", "homee"];

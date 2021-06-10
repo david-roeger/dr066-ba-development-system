@@ -12,8 +12,10 @@ export function NavIconButton({ active, target, children }) {
                     }
                 </div>
             </div>
-            <p className="hidden lg:block lg:ml-xs xl:ml-sm">
-                {children[1]}
+            <p className="hidden lg:flex lg:ml-xs xl:ml-sm">
+                <span className="my-auto">
+                    {children[1]}
+                </span>
             </p>
         </div>
     </a>
@@ -25,6 +27,6 @@ NavIconButton.defaultProps = {
     target: '#',
     children: [
         <NavIcon></NavIcon>,
-        <Text light={true}>Home</Text>
+        <Text colorClass="white">Home</Text>
     ]
 };  
