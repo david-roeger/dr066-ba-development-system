@@ -22,3 +22,4 @@ export { SliderElement } from './ControlElements/Slider/SliderElement/SliderElem
 
 export { Toggle } from './ControlElements/Toggle/SubComponents/Toggle/Toggle'
 export { ToggleScala } from './ControlElements/Toggle/SubComponents/ToggleScala/ToggleScala'
+export { ToggleElement } from './ControlElements/Toggle/ToggleElement/ToggleElement'
