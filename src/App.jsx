@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+
 import { Text, Button} from './components'
 import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
 import { Nav } from './components'
 import { Grid } from './components'
 
-import * as tokens from "dr066-ba-design-token-builder/tokens"
+
 function App() {
   const [lightState, setLightState] = useState(20);
   function updateLightState(e) {
@@ -51,7 +53,9 @@ function App() {
       <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
   
       <Grid>
-        <Nav></Nav>
+        <BrowserRouter>
+          <Nav></Nav>
+        </BrowserRouter>
       </Grid>
 
     </section>

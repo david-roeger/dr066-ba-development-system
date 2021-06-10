@@ -4,6 +4,14 @@ import { Grid } from '../index';
 export default {
     component: Grid,
     title: 'Grid',
+    parameters: {
+        docs: {
+            description: {
+                component: 'Grid Components. Renders Cols based on Screensize or variable',
+            },
+        },
+        layout: 'fullscreen'
+    },
     argTypes: {
         children: {
             description: 'Content',
