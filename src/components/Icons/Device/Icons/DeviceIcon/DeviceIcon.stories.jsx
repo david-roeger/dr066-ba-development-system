@@ -37,6 +37,16 @@ export default {
             options: colorClasses,
             control: { type: 'select' },
         },
+        outline: {
+            description: 'Outline Icon Variation', 
+            table: {
+                type: { summary: 'boolean' },
+            },
+            control: { 
+                type: 'boolean', 
+    
+            },
+        }
     },
 };
 
@@ -67,4 +77,14 @@ Heating.args = {
 export const Light = Template.bind({});
 Light.args = {
     type: "light",
+}
+
+export const Window = Template.bind({});
+Window.args = {
+    type: "window",
+}
+
+export const Thermostat = Template.bind({});
+Thermostat.args = {
+    type: "thermostat",
 }
