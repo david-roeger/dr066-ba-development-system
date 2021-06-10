@@ -6,12 +6,13 @@ import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
 import { Navigation } from './components'
 import { Grid } from './components'
+import { Slider } from './components'
 
 
 function App() {
   const [lightState, setLightState] = useState(20);
-  function updateLightState(e) {
-    setLightState(parseInt(e.target.value))
+  function updateLightState(value) {
+    setLightState(value)
   }
 
   return (
@@ -50,14 +51,7 @@ function App() {
         <DeviceIcon></DeviceIcon>
       </DeviceIconContainer>
 
-      <input type="range" min="1" max="100" value={lightState} className="slider" onChange={updateLightState}/>
-  
-      <Grid>
-        <BrowserRouter>
-          <Navigation></Navigation>
-        </BrowserRouter>
-      </Grid>
-
+      <Slider value={lightState} min={1} max={100} callback={(v) => updateLightState(v)}/>
     </section>
   )
 }
