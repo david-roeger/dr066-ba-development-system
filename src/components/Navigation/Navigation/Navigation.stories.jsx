@@ -17,7 +17,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'Renders <code>&lt;NavIconButton&gt;</code> elements inside Container. </br> Default Values are defined in config file',
+                component: 'Renders <code>&lt;NavIconButton&gt;</code> elements inside Container. <br/> Default Values are defined in config file',
             },
         },
         layout: 'fullscreen'

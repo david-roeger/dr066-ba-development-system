@@ -1,9 +1,17 @@
 import React from 'react';
 import { NavIconButton } from '../../../index';
+import { BrowserRouter } from 'react-router-dom'
 
 export default {
     component: NavIconButton,
     title: 'Navigation/Subcomponents/NavIconButton',
+    decorators: [
+        (Story) => (
+            <BrowserRouter>
+                {Story()}
+            </BrowserRouter>
+        ),
+      ],
     parameters: {
         docs: {
             description: {
