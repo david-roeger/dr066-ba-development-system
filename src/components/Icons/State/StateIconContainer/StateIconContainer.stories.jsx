@@ -1,6 +1,6 @@
 import React from 'react';
 import { StateIconContainer } from '../../../index';
-import { On as StateIconLight } from '../Icons/StateIconLight/StateIconLight.stories';
+import { On as StateIconLight } from '../SubComponents/StateIconLight/StateIconLight.stories';
 
 export default {
     component: StateIconContainer,
