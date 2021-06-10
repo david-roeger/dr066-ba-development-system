@@ -15,7 +15,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'Device Icon Component. <br> The icons are referenced from the <code>./public/deviceicons/*</code>. <br> Icon Values are defined in config file <br> Icon must be inside <code>&lt;DeviceIconContainer&gt;</code> Element.',
+                component: 'Device Icon Component. <br> The icons are referenced from the <code>./public/deviceicons/*</code>. <br> Icon Values are defined in config file <br> Must be wrapped in <code>&lt;DeviceIconContainer&gt;</code> Element.',
             },
         },
     },

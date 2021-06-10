@@ -8,7 +8,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'Nav Icon SVG. <br> The icons are referenced from <code>./public/NavIcons/*</code>. <br> Icon Values are defined in config file <br> Icon must be inside <code>&lt;NavIconButton&gt;</code> Element.',
+                component: 'Nav Icon SVG. <br> The icons are referenced from <code>./public/NavIcons/*</code>. <br> Icon Values are defined in config file <br> Must be wrapped in <code>&lt;NavIconButton&gt;</code> Element.',
             },
         },
     },

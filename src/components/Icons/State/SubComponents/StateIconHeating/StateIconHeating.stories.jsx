@@ -16,7 +16,7 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'State Icon Heating Component <br> The SVG is directly manipulated inside the component. <br> Icon Must be wrapped inside <code>&lt;StateIconContainer&gt;</code> Element.',
+                component: 'State Icon Heating Component <br> The SVG is directly manipulated inside the component. <br> Must be wrapped inside <code>&lt;StateIconContainer&gt;</code> Element.',
             },
         },
     },
