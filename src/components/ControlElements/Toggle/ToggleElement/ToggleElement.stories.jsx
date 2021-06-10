@@ -22,7 +22,7 @@ export default {
     children: {
       description: 'Content',
       table: {
-        type: { summary: '<ToggleScala><TOggle /></ToggleScala>' },
+        type: { summary: '<ToggleScala><Toggle /></ToggleScala>' },
       },
       type: {
           required: true 
