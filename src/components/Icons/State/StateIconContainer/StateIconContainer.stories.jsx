@@ -1,9 +1,11 @@
 import React from 'react';
 import { StateIconContainer } from '../../../index';
+import { On as StateIconLight } from '../Icons/StateIconLight/StateIconLight.stories';
 
 export default {
     component: StateIconContainer,
     title: 'Icons/State/StateIconContainer',
+    subcomponents: { StateIconLight },
     parameters: {
         docs: {
             description: {
@@ -30,3 +32,6 @@ export default {
 const Template = args => <StateIconContainer {...args} />;
 
 export const Default = Template.bind({});
+Default.args = {
+    children: <StateIconLight {...StateIconLight.args}/>
+};

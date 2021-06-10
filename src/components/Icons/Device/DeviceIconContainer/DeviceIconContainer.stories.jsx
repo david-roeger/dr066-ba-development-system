@@ -1,10 +1,10 @@
 import React from 'react';
-import { DeviceIconContainer, DeviceIcon } from '../../../index';
+import { DeviceIconContainer } from '../../../index';
+import { Default as DeviceIcon } from '../Icons/DeviceIcon/DeviceIcon.stories';
 
 export default {
     component: DeviceIconContainer,
     title: 'Icons/Device/DeviceIconContainer',
-    subcomponents: { DeviceIcon },
     parameters: {
         docs: {
             description: {
@@ -31,3 +31,6 @@ export default {
 const Template = args => <DeviceIconContainer {...args} />;
 
 export const Default = Template.bind({});
+Default.args = {
+    children: <DeviceIcon {...DeviceIcon.args}/>
+};
