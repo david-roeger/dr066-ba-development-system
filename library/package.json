@@ -1,8 +1,0 @@
-{
-  "name": "development-system",
-  "version": "1.0.0",
-  "description": "Development System for Building Components",
-  "browser": "./src/components/index.js",
-  "scripts": {},
-  "devDependencies": {}
-}

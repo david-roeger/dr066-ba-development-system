@@ -1,1 +1,0 @@
-export let types = ["back", "next", "close", "up", "down"];
