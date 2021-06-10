@@ -11,6 +11,7 @@ let whitelist = [
 async function run(){
     await deleteFile(`${base}.storybook`);
     await deleteFile(`${base}package.json`);
+    await deleteFile(`${base}node_modules`);
 
     fs.readdir(base, (err, files) => {
         //handling error
