@@ -19,3 +19,6 @@ export { Navigation} from './Navigation/Navigation/Navigation'
 export { Slider } from './ControlElements/Slider/SubComponents/Slider/Slider'
 export { SliderScala } from './ControlElements/Slider/SubComponents/SliderScala/SliderScala'
 export { SliderElement } from './ControlElements/Slider/SliderElement/SliderElement'
+
+export { Toggle } from './ControlElements/Toggle/SubComponents/Toggle/Toggle'
+export { ToggleScala } from './ControlElements/Toggle/SubComponents/ToggleScala/ToggleScala'
