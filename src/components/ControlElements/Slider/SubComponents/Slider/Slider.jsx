@@ -7,7 +7,7 @@ import tokens from 'dr066-ba-design-token-builder'
 
 export function Slider({state, colorClass, disabled, min, max, callback}) {
     let colors = tokens.colors;
-    let c = colorClasses[colorClass];
+    let c = colorClasses[colorClass] || colorClasses.Default;
 
     let colorsComputed = {}
     if(disabled) {

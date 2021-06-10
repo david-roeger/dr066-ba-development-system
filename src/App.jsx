@@ -51,7 +51,7 @@ function App() {
         <DeviceIcon></DeviceIcon>
       </DeviceIconContainer>
 
-      <Slider value={lightState} min={1} max={100} callback={(v) => updateLightState(v)}/>
+      <Slider colorClass="zwavsse" value={lightState} min={1} max={100} callback={(v) => updateLightState(v)}/>
     </section>
   )
 }
