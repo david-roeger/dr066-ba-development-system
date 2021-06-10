@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Development System for Building Components",
   "browser": "./src/components/index.js",
-  "scripts": {
-    "tokens": "npm update dr066-ba-design-token-builder"
-  },
-  "dependencies": {
-    "dr066-ba-design-token-builder": "git+https://git@github.com/david-roeger/dr066-ba-design-token-builder.git",
-  },
-  "devDependencies": {
-  }
+  "scripts": {},
+  "devDependencies": {}
 }
