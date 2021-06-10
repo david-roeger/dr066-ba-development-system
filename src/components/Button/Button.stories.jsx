@@ -24,7 +24,7 @@ export default {
                 type: 'text'
             }
         },
-        handleClick: {
+        callback: {
             description: 'Callback function for onClick Event', 
             type: {
                 required: true 
@@ -43,5 +43,5 @@ const Template = args => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   children: "Button",
-  handleClick: () => alert('click')
+  callback: () => alert('click')
 };
