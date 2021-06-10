@@ -6,7 +6,7 @@ import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
 import { Navigation } from './components'
 import { Grid } from './components'
-import { Slider } from './components'
+import { SliderScala, Slider } from './components'
 
 
 function App() {
@@ -51,7 +51,9 @@ function App() {
         <DeviceIcon></DeviceIcon>
       </DeviceIconContainer>
 
-      <Slider colorClass="zwavsse" value={lightState} min={1} max={100} callback={(v) => updateLightState(v)}/>
+    <SliderScala>
+      <Slider colorClass="zwavsse" value={lightState} callback={(v) => updateLightState(v)}/>
+    </SliderScala>
     </section>
   )
 }

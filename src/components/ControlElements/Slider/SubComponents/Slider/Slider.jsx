@@ -41,7 +41,6 @@ export function Slider({state, colorClass, disabled, min, max, callback}) {
     }
 
     return (
-        <div>
             <input 
             style={{
                 background : `linear-gradient(to right, ${colorsComputed.fill} 0%, ${colorsComputed.fill} ${percent}%,${colorsComputed.base} ${percent}%, ${colorsComputed.base} 100%)`,
@@ -52,7 +51,6 @@ export function Slider({state, colorClass, disabled, min, max, callback}) {
             onInput={(e) => handleInput(e.target.value)}
             onChange={(e) => handleUpdate(e.target.value)}
             />
-        </div>
     );
 }
 

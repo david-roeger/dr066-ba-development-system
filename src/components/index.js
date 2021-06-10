@@ -17,3 +17,4 @@ export { NavIconButton } from './Navigation/Subcomponents/NavIconButton/NavIconB
 export { Navigation} from './Navigation/Navigation/Navigation'
 
 export { Slider } from './ControlElements/Slider/SubComponents/Slider/Slider'
+export { SliderScala } from './ControlElements/Slider/SubComponents/SliderScala/SliderScala'
