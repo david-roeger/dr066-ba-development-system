@@ -8,14 +8,14 @@ export function SliderScala({scala, min, max, children}) {
     return (
         <div className="flex gap-xs align-center">
             <p>
-                <Text size="sm">{min}{scalaText}</Text>
+                <Text size="sm" colorClass="gray-500">{min}{scalaText}</Text>
             </p>
             <div className="flex-grow">
                 <Slider state={children.props.state} colorClass={children.props.colorClass} disabled={children.props.disabled} callback={children.props.callback}
                  min={min} max={max}/>
             </div>
             <p>
-                <Text size="sm">{max}{scalaText}</Text>
+                <Text size="sm" colorClass="gray-500">{max}{scalaText}</Text>
             </p>
         </div>
     );
