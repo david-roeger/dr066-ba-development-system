@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, NavIcon } from '../../../index'
-import { Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export function NavIconButton({ active, to, children }) {
     return <Link to={to} className="bg-black hover:bg-gray-500 active:bg-gray-700 p-xs lg:pr-sm lg:p-sm lg:pr-lg block h-auto select-none">
