@@ -1,9 +1,8 @@
 import React from 'react';
 import { Text, NavIcon } from '../../../index'
-import { Link } from 'react-router-dom';
 
-export function NavIconButton({ active, to, children }) {
-    return <Link to={to} className="bg-black hover:bg-gray-500 active:bg-gray-700 p-xs lg:pr-sm lg:p-sm lg:pr-lg block h-auto select-none">
+export function NavIconButton({ active, target, children }) {
+    return <a href={target} className="bg-black hover:bg-gray-500 active:bg-gray-700 p-xs lg:pr-sm lg:p-sm lg:pr-lg block h-auto select-none">
         <div className="flex align-center">
             <div className="p-xs w-fit-content inline-block lg:flex lg:flex-row-reverse lg:items-center">
                 {children[0]}
@@ -19,12 +18,12 @@ export function NavIconButton({ active, to, children }) {
                 </span>
             </p>
         </div>
-    </Link>
+    </a>
 };
 
 NavIconButton.defaultProps = {
     active: false,
-    to: '#',
+    target: '#',
     children: [
         <NavIcon></NavIcon>,
         <Text colorClass="white">Home</Text>

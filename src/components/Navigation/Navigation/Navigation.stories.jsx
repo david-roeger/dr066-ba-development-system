@@ -1,17 +1,14 @@
 import React from 'react';
 import { Navigation, Grid } from '../../index';
-import { BrowserRouter } from 'react-router-dom'
 
 export default {
     component: Navigation,
     title: 'Navigation/Navigation',
     decorators: [
         (Story) => (
-            <BrowserRouter>
                 <Grid full>
                     {Story()}
-                </Grid>
-            </BrowserRouter>
+            </Grid>
         ),
       ],
     parameters: {
