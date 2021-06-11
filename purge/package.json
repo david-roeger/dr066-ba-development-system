@@ -7,7 +7,6 @@
         "purge": "node purge.js"
     },
     "dependencies": {
-        "del": "^6.0.0",
-        "react-router-dom": "^5.2.0"
+        "del": "^6.0.0"
     }
 }
