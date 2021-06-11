@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import { BrowserRouter } from 'react-router-dom'
+import { Grid, Navigation, NavIcon, NavIconButton} from './components'
 import { Text, Button} from './components'
 import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
@@ -51,6 +53,13 @@ function App() {
     <SliderScala>
       <Slider colorClass="zwavsse" value={lightState} callback={(v) => updateLightState(v)}/>
     </SliderScala>
+
+    <BrowserRouter>
+      <Grid full>
+        <Navigation>
+        </Navigation>
+      </Grid>
+    </BrowserRouter>
     </section>
   )
 }
