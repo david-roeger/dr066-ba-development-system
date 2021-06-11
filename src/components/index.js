@@ -1,6 +1,7 @@
 export { Grid } from './Grid/Grid';
 export { Text } from './Text/Text';
 export { Button } from './Button/Button';
+export { Card } from './Card/Card';
 
 export { SystemIcon } from './Icons/System/SubComponents/SystemIcon/SystemIcon'
 export { SystemIconContainer } from './Icons/System/SystemIconContainer/SystemIconContainer'

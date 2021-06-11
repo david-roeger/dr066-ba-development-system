@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Grid, Navigation, NavIcon, NavIconButton} from './components'
+import { Grid, Navigation, NavIcon, NavIconButton, Card} from './components'
 import { Text, Button} from './components'
 import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
@@ -57,6 +57,9 @@ function App() {
         <Navigation>
         </Navigation>
       </Grid>
+
+      <Card>
+      </Card>
     </section>
   )
 }
