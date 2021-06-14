@@ -31,4 +31,8 @@ export { ToggleElement } from './ControlElements/Toggle/ToggleElement/ToggleElem
 export { UpDown } from './ControlElements/UpDown/SubComponents/UpDown/UpDown'
 export { UpDownElement } from './ControlElements/UpDown/UpDownElement/UpDownElement'
 
+ 
+export { Value } from './ControlElements/Value/SubComponents/Value/Value'
+export { ValueElement } from './ControlElements/Value/ValueElement/ValueElement'
+
 export { HeatingDeviceElement } from './DeviceComponents/HeatingDeviceElement/HeatingDeviceElement'
