@@ -78,7 +78,7 @@ export function HeatingDeviceElement({device}) {
 
     return (
     <section className="flex">
-        <div className="flex-grow border-l border-t border-b rounded-l-sm flex p-sm gap-xs">
+        <div className="flex-grow border-l border-t border-b border-black rounded-l-sm flex p-sm gap-xs">
             <DeviceIconContainer>
                 <DeviceIcon type={device.type} colorClass={device.cube} />
             </DeviceIconContainer>
@@ -91,7 +91,7 @@ export function HeatingDeviceElement({device}) {
             ))}
             </div>
         </div>
-        <div className="bg-gray-300 border rounded-r-sm flex">
+        <div className="bg-gray-300 border border-black rounded-r-sm flex">
             <div className="my-auto">
                 <SystemIconContainer>
                     <SystemIcon type="next"/>

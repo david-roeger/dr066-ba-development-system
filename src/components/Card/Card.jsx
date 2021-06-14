@@ -26,12 +26,12 @@ export function Card({title, children, col}) {
 
     return (
         <div className="flex flex-col">
-            <div className="border rounded-t-md bg-black py-sm px-md">
+            <div className="border border-black rounded-t-md bg-black py-sm px-md">
             <Text size="sm" colorClass="white">
                 { title }
             </Text>
             </div>
-            <div className="flex flex-col gap-md p-md border-l border-r border-b rounded-b-md">
+            <div className="flex flex-col gap-md p-md border-l border-r border-b border-black rounded-b-md">
                 { rows.map((row, index) => (
                     <Grid key={index} cols={col ? 3 : 0}>
                         { row.map((element, i) => (
