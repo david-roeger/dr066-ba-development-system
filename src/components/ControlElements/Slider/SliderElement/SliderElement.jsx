@@ -17,6 +17,6 @@ export function SliderElement({attribute, children}) {
 };
 
 SliderElement.defaultProps = {
-    attribute: 'Attibute',
+    attribute: 'Attribute',
     children: <SliderScala><Slider/></SliderScala>
 };

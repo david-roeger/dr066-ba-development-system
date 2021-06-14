@@ -17,6 +17,6 @@ export function ToggleElement({attribute, children}) {
 };
 
 ToggleElement.defaultProps = {
-    attribute: 'Attibute',
+    attribute: 'Attribute',
     children: <ToggleScala><Toggle/></ToggleScala>
 };

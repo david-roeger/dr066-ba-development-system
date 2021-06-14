@@ -28,4 +28,7 @@ export { Toggle } from './ControlElements/Toggle/SubComponents/Toggle/Toggle'
 export { ToggleScala } from './ControlElements/Toggle/SubComponents/ToggleScala/ToggleScala'
 export { ToggleElement } from './ControlElements/Toggle/ToggleElement/ToggleElement'
  
+export { UpDown } from './ControlElements/UpDown/SubComponents/UpDown/UpDown'
+export { UpDownElement } from './ControlElements/UpDown/UpDownElement/UpDownElement'
+
 export { HeatingDeviceElement } from './DeviceComponents/HeatingDeviceElement/HeatingDeviceElement'
