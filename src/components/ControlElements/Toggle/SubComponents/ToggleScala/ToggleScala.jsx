@@ -4,7 +4,6 @@ import { scalas } from './ToggleScala.config'
 
 export function ToggleScala({scala, children}) {
     let scalaText = scalas[scala] || scalas.onOff;
-    console.log(scalaText);
     return (
         <div className="flex gap-xs align-center">
             <p>

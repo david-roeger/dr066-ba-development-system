@@ -24,7 +24,6 @@ export function Card({title, children, col}) {
         rows[newIndex].push(element)
     }));
 
-    console.log(col);
     return (
         <div className="flex flex-col">
             <div className="border rounded-t-md bg-black py-sm px-md">

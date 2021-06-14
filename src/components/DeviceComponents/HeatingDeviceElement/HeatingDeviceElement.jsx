@@ -36,7 +36,6 @@ export function HeatingDeviceElement({device}) {
 
     const [deviceState, setDeviceState] = useState(device);
     function updateDeviceState(device) {
-        console.log(device);
         setDeviceState(device);
     }
 

@@ -3,7 +3,6 @@ import { Text, Slider } from '../../../../index'
 import { scalas } from './SliderScala.config'
 
 export function SliderScala({scala, min, max, children}) {
-    console.log(children.props);
     let scalaText = scalas[scala] || scalas.percent;
     return (
         <div className="flex gap-xs align-center">

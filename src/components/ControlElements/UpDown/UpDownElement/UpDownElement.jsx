@@ -7,8 +7,7 @@ export function UpDownElement({attribute, state, colorClass, callback}) {
     
     function handleButtonClick(value) {
         setUpDownState(value);
-        console.log(upDownState);
-        callback((value));
+        callback(value);
     }
 
     return (

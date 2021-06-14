@@ -26,8 +26,6 @@ export function Toggle({state, colorClass, disabled, callback}) {
         colorsComputed[key] = colors[property];
     }
 
-    console.log(c.outline);
-
     const [toggleState, setToggleState] = useState(state);
     function handleUpdate(value) {
         setToggleState(value);
