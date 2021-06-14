@@ -1,6 +1,6 @@
 import React from 'react';
 import { SystemIcon, SystemIconContainer } from '../../../../index'
-import { types } from './SystemIcon.config'
+import { types, colorClasses } from './SystemIcon.config'
 
 export default {
     component: SystemIcon,
@@ -28,6 +28,14 @@ export default {
             options: types,
             control: { type: 'select' },
         },
+        colorClass: {
+            description: 'Color Class (from config)', 
+            table: {
+                type: { summary: 'string' },
+            },
+            options: colorClasses,
+            control: { type: 'select' },
+        }
     },
 };
 
