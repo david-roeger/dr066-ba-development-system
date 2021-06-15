@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from '../index';
 import { Text } from '../index'
+import { VideoElement } from '../index';
 
 
 export default {
@@ -56,4 +57,10 @@ export const Col = Template.bind({});
 Col.args = {
     col: true,
     children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
+}
+
+export const Video = Template.bind({});
+Video.args = {
+    col: true,
+    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<VideoElement />,<Text>Element</Text>]
 }

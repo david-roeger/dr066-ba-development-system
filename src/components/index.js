@@ -16,6 +16,8 @@ export { StateIconGarage } from './Icons/State/SubComponents/StateIconGarage/Sta
 export { StateIconCamera } from './Icons/State/SubComponents/StateIconCamera/StateIconCamera';
 export { StateIconHumidity } from './Icons/State/SubComponents/StateIconHumidity/StateIconHumidity';
 
+export { VideoElement } from './Utils/VideoElement/VideoElement'
+
 export { NavIcon } from './Navigation/Subcomponents/NavIcon/NavIcon';
 export { NavIconButton } from './Navigation/Subcomponents/NavIconButton/NavIconButton';
 export { Navigation} from './Navigation/Navigation/Navigation'
