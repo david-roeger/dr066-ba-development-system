@@ -53,9 +53,114 @@ function App() {
       <Slider colorClass="zwavsse" value={lightState} callback={(v) => updateLightState(v)}/>
     </SliderScala>
 
-      <Grid full>
+      <Grid>
         <Navigation>
         </Navigation>
+        <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
+      </Card>
       </Grid>
 
 
