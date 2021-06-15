@@ -40,13 +40,14 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  docs: {
-    theme: theme
-  },
   viewport: {
     viewports: {
       ...customViewports,
     },
-  }
+    defaultViewport: 'sm'
+  },
+  docs: {
+    theme: theme,
+  },
 }
 
