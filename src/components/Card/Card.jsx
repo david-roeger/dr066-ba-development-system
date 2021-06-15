@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Text, Grid } from '../index'
+import { Text, Grid, VideoElement } from '../index'
 
 export function Card({title, children, col}) {
     let elements = [];
@@ -10,8 +10,8 @@ export function Card({title, children, col}) {
         elements = [...children];
     }
     
-    let videos = elements.filter(ele => ele.type.name === 'VideoElement');
-    let others = elements.filter(ele => ele.type.name !== 'VideoElement');
+    let videos = elements.filter(ele => ele.type.name === VideoElement.name);
+    let others = elements.filter(ele => ele.type.name !== VideoElement.name);
 
     let rows = [];
     others.forEach(element => {
@@ -27,7 +27,6 @@ export function Card({title, children, col}) {
         });
         return
     });
-    console.log(rows)
 
     return (
         <div className="flex flex-col">
