@@ -8,7 +8,6 @@ export function VideoElement({ src, type }) {
   
     useEffect(() => {
       setWidth(elementRef.current.getBoundingClientRect().width);
-      console.log(width);
       setHeight(elementRef.current.getBoundingClientRect().width / 16 * 9);
     }, []); //empty dependency array so it only runs once at render
     

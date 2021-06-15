@@ -4,7 +4,7 @@ import { Grid, Navigation, NavIcon, NavIconButton, Card} from './components'
 import { Text, Button} from './components'
 import { StateIconContainer, StateIconLight} from './components'
 import { DeviceIconContainer, DeviceIcon} from './components'
-import { SliderScala, Slider } from './components'
+import { SliderScala, Slider, VideoElement } from './components'
 
 
 function App() {
@@ -58,7 +58,23 @@ function App() {
         </Navigation>
       </Grid>
 
-      <Card>
+
+
+
+      <Card col title="Hallo">
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <Text>
+          Element
+        </Text>
+        <VideoElement />
+        <Text>
+          Element
+        </Text>
       </Card>
     </section>
   )
