@@ -81,7 +81,6 @@ function copyPackage() {
 
 async function go() {
     await run();
-    console.log("hi")
     copyPackage();
 }
 
