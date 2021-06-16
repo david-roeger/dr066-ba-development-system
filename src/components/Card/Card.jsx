@@ -30,7 +30,7 @@ export function Card({title, children, col}) {
 
     return (
         <div className="flex flex-col">
-            <div className="border border-black rounded-t-md bg-black py-sm px-md lg:p-md lg:px-lg">
+            <div className="border border-black rounded-t-md bg-black py-sm px-md">
                 <Text size="sm" colorClass="white">
                     { title }
                 </Text>
