@@ -13,7 +13,7 @@ export function VideoElement({ src, type }) {
     
     return (
         <div className="h-full w-full">
-            <video ref={elementRef} width="414" height="232" autoPlay muted controls playsInline loop className="rounded-sm border border-black object-fill w-full h-full max-w-[414px]">
+            <video ref={elementRef} width="414" height="232" autoPlay muted controls playsInline loop className="rounded-sm border border-black object-fill w-full h-full">
                 <source src={src}
                     type={`video/${type}`} />
             </video>

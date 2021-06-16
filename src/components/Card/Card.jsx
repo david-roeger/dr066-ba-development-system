@@ -38,7 +38,7 @@ export function Card({title, children, col}) {
             <div className="p-sm md:p-md lg:p-lg xl:p-xl border-l border-r border-b border-black rounded-b-md">
                 <Grid cols={col ? undefined : 0}>
                     { rows.map((element, i) => (
-                        <div key={i} className={`${col ? 'flex' : ''} ${col && element.type === 'VideoElement' ? 'col-span-full' : ''} `}>
+                        <div key={i} className={`${col ? 'flex' : ''} ${col && element.type === 'VideoElement' ? 'col-span-2 lg:col-span-3 xl:col-span-4' : ''} `}>
                             <div className="mx-auto w-fit-content">
                                 { element.value }
                             </div>
