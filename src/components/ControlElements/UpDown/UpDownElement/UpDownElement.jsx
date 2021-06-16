@@ -12,11 +12,11 @@ export function UpDownElement({attribute, state, colorClass, callback}) {
 
     return (
         <div className="flex gap-sm align-center">
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center">
                 <Text>{attribute}</Text>
                 <Text>:</Text>
             </div>
-            <div className="flex gap-md mx-sm">
+            <div className="flex gap-sm">
                 <UpDown active={upDownState == 0} state={0} colorClass={colorClass} callback={() => handleButtonClick(0)}></UpDown>
                 <UpDown active={upDownState == 1} state={1} colorClass={colorClass} callback={() => handleButtonClick(1)}></UpDown>
             </div>
