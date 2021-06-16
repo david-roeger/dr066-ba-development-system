@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, NavIcon } from '../../../index'
 
 export function NavIconButton({ active, target, children }) {
-    return <a href={target} className="bg-black hover:bg-gray-500 active:bg-gray-700 p-xs lg:pr-sm lg:p-sm lg:pr-lg block h-auto select-none">
+    return <a href={target} className="bg-black hover:bg-gray-500 active:bg-gray-700 p-xs pt-sm lg:pt-xs lg:pr-sm lg:p-sm lg:pr-lg block h-auto select-none">
         <div className="flex align-center">
             <div className="p-xs w-fit-content inline-block lg:flex lg:flex-row-reverse lg:items-center">
                 {children[0]}
