@@ -62,5 +62,5 @@ Col.args = {
 export const Video = Template.bind({});
 Video.args = {
     col: true,
-    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<VideoElement />,<Text>Element</Text>]
+    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<VideoElement />]
 }
