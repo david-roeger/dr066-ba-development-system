@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavIconButton } from '../../../index';
+import { NavIconButton, NavIconButtonWrapper } from '../../../index';
 
 export default {
     component: NavIconButton,
@@ -11,16 +11,30 @@ export default {
             },
         },
     },
+    decorators: [
+        (Story) => (
+            <NavIconButtonWrapper>
+                {Story()}
+            </NavIconButtonWrapper>
+        ),
+      ],
     argTypes: {
         active: {
             description: 'Active State', 
             options: [true, false],
-        },
-        target: {
-            description: 'Target URl', 
             table: {
-                type: { summary: 'string' },
+                type: { summary: 'boolean' },
             },
+        },
+        children: {
+            description: '&lt;NavIcon /&gt;,&lt;Text /&gt;',
+            type: {
+                required: true 
+            },
+            table: {
+                type: { summary: 'Element Collection' },
+            },
+            control: false
         }
     },
 };
