@@ -35,7 +35,7 @@ export function Card({title, children, col, colCount}) {
                     { title }
                 </Text>
             </div>
-            <div className="p-sm md:p-md lg:p-lg xl:p-xl border-l border-r border-b border-black rounded-b-md">
+            <div className="bg-white p-sm md:p-md lg:p-lg xl:p-xl border-l border-r border-b border-black rounded-b-md">
                 <Grid cols={col ? colCount : 0}>
                     { rows.map((element, i) => (
                         <div key={i} className={`${col ? 'flex' : ''} ${col && element.type === 'VideoElement' ? 'col-span-2 lg:col-span-3 xl:col-span-4' : ''} `}>
