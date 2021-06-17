@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <section className="bg-gray-100 h-screen w-screen m-auto font-inter text-basetext-gray-700">
+    <section className="bg-gray-100 h-screen w-screen m-auto font-inter text-base text-gray-700">
       <h1 className="my-md">
         <Text size="xl">Build Components</Text>
       </h1>
