@@ -1,2 +1,2 @@
 export let types = ["back", "next", "close", "up", "down"];
-export let colorClasses = ["default", "enocean", "zigbee", "zwave"];
+export let colorClasses = ["default", "light", "enocean", "zigbee", "zwave"];
