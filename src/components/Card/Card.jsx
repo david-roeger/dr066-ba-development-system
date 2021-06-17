@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Text, Grid, VideoElement } from '../index'
 
-export function Card({title, children, col}) {
+export function Card({title, children, col, colCount}) {
     let elements = [];
     if(!Array.isArray(children)) {
         elements.push(children)
@@ -36,7 +36,7 @@ export function Card({title, children, col}) {
                 </Text>
             </div>
             <div className="p-sm md:p-md lg:p-lg xl:p-xl border-l border-r border-b border-black rounded-b-md">
-                <Grid cols={col ? undefined : 0}>
+                <Grid cols={col ? colCount : 0}>
                     { rows.map((element, i) => (
                         <div key={i} className={`${col ? 'flex' : ''} ${col && element.type === 'VideoElement' ? 'col-span-2 lg:col-span-3 xl:col-span-4' : ''} `}>
                             <div className="mx-auto w-fit-content">
@@ -55,5 +55,6 @@ export function Card({title, children, col}) {
 Card.defaultProps = {
     title: 'Header Title',
     col: false,
+    colCount: undefined,
     children: []
 };

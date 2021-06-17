@@ -33,6 +33,18 @@ export default {
                 type: 'boolean', 
             },
         },
+        colCount: {
+            description: 'Put items in cols next to each other. Default colCount uses <Code>Grid</Code> Auto Cols. col must be set.', 
+            table: {
+                type: { summary: 'number' },
+            },
+            control: { 
+                type: 'range', 
+                min: 0, 
+                max: 9, 
+                step: 1 
+            }
+        },
         children: {
             description: 'Text',
             type: {
@@ -53,11 +65,20 @@ export const Default = Template.bind({});
 Default.args = {
     children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
 }
+
 export const Col = Template.bind({});
 Col.args = {
     col: true,
     children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
 }
+
+export const CustomCol = Template.bind({});
+CustomCol.args = {
+    col: true,
+    colCount: 3,
+    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
+}
+
 
 export const Video = Template.bind({});
 Video.args = {
