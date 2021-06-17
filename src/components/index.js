@@ -5,7 +5,6 @@ export { Card } from './Card/Card';
 export { Button } from './Button/Button/Button';
 export { IconButton } from './Button/IconButton/IconButton';
 
-
 export { SystemIcon } from './Icons/System/SubComponents/SystemIcon/SystemIcon'
 export { SystemIconContainer } from './Icons/System/SystemIconContainer/SystemIconContainer'
 
@@ -23,6 +22,7 @@ export { VideoElement } from './Utils/VideoElement/VideoElement'
 
 export { NavIcon } from './Navigation/Subcomponents/NavIcon/NavIcon';
 export { NavIconButton } from './Navigation/Subcomponents/NavIconButton/NavIconButton';
+export { NavIconButtonWrapper } from './Navigation/Subcomponents/NavIconButtonWrapper/NavIconButtonWrapper';
 export { Navigation} from './Navigation/Navigation/Navigation'
 
 export { Slider } from './ControlElements/Slider/SubComponents/Slider/Slider'
