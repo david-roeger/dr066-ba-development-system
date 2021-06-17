@@ -1,9 +1,12 @@
 import React from 'react';
-import { Button } from '../index';
+import { IconButton } from '../../index';
+
+import { types } from '../../Icons/System/SubComponents/SystemIcon/SystemIcon.config'
+
 
 export default {
-  title: 'Button',
-  component: Button,
+  title: 'Button/IconButton',
+  component: IconButton,
   parameters: {
     docs: {
       description: {
@@ -24,6 +27,14 @@ export default {
                 type: 'text'
             }
         },
+        type: {
+          description: 'Icon type', 
+          table: {
+              type: { summary: 'string' },
+          },
+          options: types,
+          control: { type: 'select' },
+        },
         callback: {
             description: 'Callback function for onClick Event', 
             type: {
@@ -38,7 +49,7 @@ export default {
 };
 
 
-const Template = args => <Button {...args} />;
+const Template = args => <IconButton {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
