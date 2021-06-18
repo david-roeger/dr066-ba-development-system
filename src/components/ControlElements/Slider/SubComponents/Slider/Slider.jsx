@@ -44,7 +44,7 @@ export function Slider({state, colorClass, disabled, min, max, callback}) {
             <input 
             style={{
                 background : `linear-gradient(to right, ${colorsComputed.fill} 0%, ${colorsComputed.fill} ${percent}%,${colorsComputed.base} ${percent}%, ${colorsComputed.base} 100%)`,
-                '--border-color': colorsComputed.outline
+                '--border-color': colorsComputed.outline, '--fill-color': colorsComputed.fill, '--base-color' : colorsComputed.base
               }}
             className="slider block min-w-full my-sm cursor-pointer" 
             type="range" value={sliderState} min={min} max={max} disabled={disabled}
