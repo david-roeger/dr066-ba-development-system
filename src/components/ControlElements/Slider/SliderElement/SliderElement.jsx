@@ -4,7 +4,7 @@ import { Text, SliderScala, Slider } from '../../../index'
 export function SliderElement({attribute, children}) {
     
     return (
-        <div className="flex gap-sm align-center">
+        <div className="flex gap-sm align-center items-center">
             <div className="hidden md:block">
                 <Text>{attribute}</Text>
                 <Text>:</Text>

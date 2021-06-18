@@ -39,7 +39,7 @@ export function Toggle({state, colorClass, disabled, callback}) {
             '--border-color': colorsComputed.outline
         }} className="relative block w-[48px] h-lg rounded-full cursor-pointer">
             <input 
-            className="toggle opacity-0 w-0 h-0" 
+            className="toggle opacity-0 w-0 h-0 hidden" 
             type="checkbox" checked={toggleState} disabled={disabled}
             onChange={(e) => handleUpdate(e.target.checked)}
             />

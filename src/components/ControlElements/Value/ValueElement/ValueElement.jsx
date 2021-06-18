@@ -3,7 +3,7 @@ import { Text, UpDown } from '../../../index'
 
 export function ValueElement({attribute, children}) {
     return (
-        <div className="flex gap-sm align-center">
+        <div className="flex gap-sm align-center items-center">
             <div className="hidden md:block">
                 <Text>{attribute}</Text>
                 <Text>:</Text>

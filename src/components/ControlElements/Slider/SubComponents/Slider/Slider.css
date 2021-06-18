@@ -1,3 +1,9 @@
+@-moz-document url-prefix() {
+    input[type="range"].slider {
+        background: transparent !important;
+    }
+  }
+
 input[type="range"].slider {
     -webkit-appearance: none;
     @apply w-full;
@@ -16,6 +22,8 @@ input[type="range"].slider::-moz-range-track {
     @apply h-sm;
     @apply w-full;
     @apply rounded-full;
+    margin: 0;
+    background-color: var(--base-color);
     border: 2px solid var(--border-color);
 }
 
@@ -38,3 +46,13 @@ input[type="range"].slider::-moz-range-thumb {
     background: white;
     margin-top: -10px;
 }
+
+input[type="range"].slider::-moz-range-progress {
+    background-color:var(--fill-color);
+    @apply h-sm;
+    @apply rounded-full;
+}
+  
+  input[type="range"].slider::-moz-range-track {  
+    background-color: var(--base-color);
+  }

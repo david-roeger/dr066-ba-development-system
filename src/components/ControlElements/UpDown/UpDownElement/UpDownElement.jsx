@@ -11,8 +11,8 @@ export function UpDownElement({attribute, state, colorClass, callback}) {
     }
 
     return (
-        <div className="flex gap-sm align-center">
-            <div className="hidden md:flex items-center">
+        <div className="flex gap-sm align-center items-center">
+            <div className="hidden md:block">
                 <Text>{attribute}</Text>
                 <Text>:</Text>
             </div>
