@@ -5,7 +5,7 @@ import { scalas } from './SliderScala.config'
 export function SliderScala({scala, min, max, children}) {
     let scalaText = scalas[scala] || scalas.percent;
     return (
-        <div className="flex gap-xs align-center justify-center">
+        <div className="flex gap-xs align-center items-center">
             <Text size="sm" colorClass="gray-500">{min}{scalaText}</Text>
             <div className="flex-grow">
                 <Slider state={children.props.state} colorClass={children.props.colorClass} disabled={children.props.disabled} callback={children.props.callback}
