@@ -39,7 +39,7 @@ export function Card({title, children, col, colCount}) {
                 <Grid cols={col ? colCount : 0}>
                     { rows.map((element, i) => (
                         <div key={i} className={`${col ? 'flex' : ''} ${col && element.type === 'VideoElement' ? 'col-span-2 lg:col-span-3 xl:col-span-4' : ''} `}>
-                            <div className="mx-auto w-fit-content">
+                            <div className="mx-auto">
                                 { element.value }
                             </div>
                         </div>
