@@ -1,3 +1,0 @@
-[build]
-    command="build-storybook -s public -o ./build"
-    publish="build/"
