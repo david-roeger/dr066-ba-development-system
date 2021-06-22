@@ -1,6 +1,7 @@
 const theme = require('dr066-ba-design-token-builder/tailwindTheme');
 
 module.exports = {
+  mode: "jit",
   purge: {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}']
   },
