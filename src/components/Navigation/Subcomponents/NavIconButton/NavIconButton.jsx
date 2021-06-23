@@ -22,7 +22,7 @@ export function NavIconButton({ active, children }) {
 NavIconButton.defaultProps = {
     active: false,
     children: [
-        <NavIcon></NavIcon>,
-        <Text colorClass="white">Home</Text>
+        <NavIcon key={0}></NavIcon>,
+        <Text key={1} colorClass="white">Home</Text>
     ]
 };  

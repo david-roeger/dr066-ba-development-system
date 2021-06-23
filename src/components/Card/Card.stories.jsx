@@ -34,7 +34,7 @@ export default {
             },
         },
         colCount: {
-            description: 'Put items in cols next to each other. Default colCount uses <Code>Grid</Code> Auto Cols. col must be set.', 
+            description: 'Put items in cols next to each other. Default colCount uses <code>Grid</code> Auto Cols. col must be set.', 
             table: {
                 type: { summary: 'number' },
             },
@@ -63,25 +63,50 @@ const Template = args => <Card {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
+    children: [
+        <Text key={0}>Element</Text>,
+        <Text key={1}>Element</Text>,
+        <Text key={2}>Element</Text>,
+        <Text key={3}>Element</Text>,
+        <Text key={4}>Element</Text>
+    ]
 }
 
 export const Col = Template.bind({});
 Col.args = {
     col: true,
-    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
+    children: [
+        <Text key={0}>Element</Text>,
+        <Text key={1}>Element</Text>,
+        <Text key={2}>Element</Text>,
+        <Text key={3}>Element</Text>,
+        <Text key={4}>Element</Text>
+    ]
 }
 
 export const CustomCol = Template.bind({});
 CustomCol.args = {
     col: true,
     colCount: 3,
-    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>]
+    children: [
+        <Text key={0}>Element</Text>,
+        <Text key={1}>Element</Text>,
+        <Text key={2}>Element</Text>,
+        <Text key={3}>Element</Text>,
+        <Text key={4}>Element</Text>
+    ]
 }
 
 
 export const Video = Template.bind({});
 Video.args = {
     col: true,
-    children: [<Text>Element</Text>,<Text>Element</Text>,<Text>Element</Text>,<VideoElement />]
+    children: [
+        <Text key={0}>Element</Text>,
+        <Text key={1}>Element</Text>,
+        <Text key={2}>Element</Text>,
+        <Text key={3}>Element</Text>,
+        <VideoElement key={4}/>,
+        <Text key={5}>Element</Text>
+    ]
 }

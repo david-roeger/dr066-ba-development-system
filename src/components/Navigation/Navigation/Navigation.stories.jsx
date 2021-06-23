@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigation, Grid } from '../../index';
+import { Navigation, NavIconButtonWrapper, NavIconButton, Grid } from '../../index';
 
 export default {
     component: Navigation,
@@ -14,19 +14,19 @@ export default {
     parameters: {
         docs: {
             description: {
-                component: 'Renders <code>&lt;NavIconButton&gt;</code> elements inside Container. <br/> Default Values are defined in config file',
+                component: 'Renders <code>&lt;NavIconButtonWrapper&gt;</code> elements inside Container. <br/> Default Values are defined in config file',
             },
         },
         layout: 'fullscreen'
     },
     argTypes: {
         children: {
-            description: 'NavIconButtons',
+            description: '&lt;NavIconButtonWrapper /&gt;',
             type: {
                 required: true 
             },
             table: {
-                type: { summary: '[NavIconButton]' },
+                type: { summary: 'Element Collection' },
                 default: '-'
             },
             control: {
@@ -39,3 +39,27 @@ export default {
 const Template = args => <Navigation {...args} />;
 
 export const Default = Template.bind({});
+Default.args = {
+    children: [
+        <NavIconButtonWrapper key={0}>
+            <NavIconButton active>
+            </NavIconButton>
+        </NavIconButtonWrapper>,
+        <NavIconButtonWrapper key={1}>
+             <NavIconButton>
+             </NavIconButton>
+         </NavIconButtonWrapper>,
+        <NavIconButtonWrapper key={2}>
+            <NavIconButton>
+            </NavIconButton>
+        </NavIconButtonWrapper>,
+        <NavIconButtonWrapper key={3}>
+            <NavIconButton>
+            </NavIconButton>
+        </NavIconButtonWrapper>,
+        <NavIconButtonWrapper key={4}>
+            <NavIconButton>
+            </NavIconButton>
+        </NavIconButtonWrapper>,
+    ]
+}
