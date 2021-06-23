@@ -1,34 +1,12 @@
 {
-  "name": "development-system",
-  "version": "1.0.0",
-  "description": "Development System for Building Components",
-  "browser": "./src/components/index.js",
-  "scripts": {
-    "dev": "start-storybook -s ./public -p 6006",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "storybook-docs": "start-storybook -s public --docs --no-manager-cache",
-    "build": "build-storybook -s public",
-    "storybook-build": "build-storybook -s public",
-    "tokens": "npm update dr066-ba-design-token-builder"
-  },
-  "dependencies": {
-    "dr066-ba-design-token-builder": "git+https://git@github.com/david-roeger/dr066-ba-design-token-builder.git",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/addons": "^6.2.9",
-    "@storybook/react": "^6.2.9",
-    "@storybook/theming": "^6.2.9",
-    "@tailwindcss/jit": "^0.1.7",
-    "autoprefixer": "^10.2.5",
-    "babel-loader": "^8.2.2",
-    "postcss": "^8.2.8",
-    "storybook-addon-pseudo-states": "^1.0.0",
-    "tailwindcss": "^2.0.4"
-  }
+    "name": "development-system",
+    "version": "1.0.0",
+    "description": "Development System for Building Components",
+    "browser": "./src/components/index.js",
+    "scripts": {
+        "purge": "node purge.js"
+    },
+    "dependencies": {
+        "del": "^6.0.0"
+    }
 }
