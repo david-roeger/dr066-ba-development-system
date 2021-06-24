@@ -2,13 +2,10 @@ import React, { useState } from 'react';
 import './Toggle.css'
 import { colorClasses } from './Toggle.config'
 
-import tokens from 'dr066-ba-design-token-builder'
-
-
+import tokens from 'dr066-ba-design-token-builder/build/web/tokens'
 export function Toggle({state, colorClass, disabled, callback}) {
     let colors = tokens.colors;
     let c = colorClasses[colorClass] || colorClasses.Default;
-
     let colorsComputed = {}
     if(disabled) {
         state = undefined;
@@ -23,7 +20,7 @@ export function Toggle({state, colorClass, disabled, callback}) {
         let property = c[key];
         let index = property.indexOf('-');
         property = property.slice(index + 1, property.length);
-        colorsComputed[key] = colors[property];
+        colorsComputed[key] = colors[property]?.value;
     }
 
     const [toggleState, setToggleState] = useState(state);
