@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Slider.css'
 import { colorClasses } from './Slider.config'
 
-import tokens from 'dr066-ba-design-token-builder'
+import tokens from 'dr066-ba-design-token-builder/build/web/tokens'
 
 
 export function Slider({state, colorClass, disabled, min, max, callback}) {
@@ -22,7 +22,7 @@ export function Slider({state, colorClass, disabled, min, max, callback}) {
             let property = c[key];
             let index = property.indexOf('-');
             property = property.slice(index + 1, property.length);
-            colorsComputed[key] = colors[property];
+            colorsComputed[key] = colors[property]?.value;
         }
     }
 
