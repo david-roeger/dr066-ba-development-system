@@ -13,9 +13,9 @@ export function Slider({state, colorClass, disabled, min, max, callback}) {
     if(disabled) {
         state = min + (max - min) / 2;
         colorsComputed = {
-            outline: colors["gray-300"],
-            fill: colors["white"],
-            base: colors["white"],
+            outline: colors["gray-300"].value,
+            fill: colors["white"].value,
+            base: colors["white"].value,
         }
     } else {
         for (const key in c) {
@@ -25,7 +25,7 @@ export function Slider({state, colorClass, disabled, min, max, callback}) {
             colorsComputed[key] = colors[property]?.value;
         }
     }
-
+    console.log(colorsComputed);
 
    
 
