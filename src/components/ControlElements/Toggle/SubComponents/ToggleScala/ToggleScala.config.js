@@ -1,3 +1,3 @@
 export let scalas = {
-    onOff: ["Aus", "An"],
+  onOff: ["Aus", "An"],
 };

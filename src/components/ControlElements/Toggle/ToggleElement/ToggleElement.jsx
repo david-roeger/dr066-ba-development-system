@@ -1,22 +1,23 @@
-import React from 'react';
-import { Text, ToggleScala, Toggle } from '../../../index'
+import React from "react";
+import { Text, ToggleScala, Toggle } from "../../../index";
 
-export function ToggleElement({attribute, children}) {
-    
-    return (
-        <div className="flex gap-sm align-center items-center">
-            <div className="hidden md:block">
-                <Text>{attribute}</Text>
-                <Text>:</Text>
-            </div>
-            <div className="flex-grow">
-                {children}
-            </div>
-        </div>
-    )
-};
+export function ToggleElement({ attribute, children }) {
+  return (
+    <div className='flex gap-sm align-center items-center'>
+      <div className='hidden md:block'>
+        <Text>{attribute}</Text>
+        <Text>:</Text>
+      </div>
+      <div className='flex-grow'>{children}</div>
+    </div>
+  );
+}
 
 ToggleElement.defaultProps = {
-    attribute: 'Attribute',
-    children: <ToggleScala><Toggle/></ToggleScala>
+  attribute: "Attribute",
+  children: (
+    <ToggleScala>
+      <Toggle />
+    </ToggleScala>
+  ),
 };

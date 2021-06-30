@@ -1,42 +1,41 @@
-import React from 'react';
-import { ToggleElement } from '../../../index';
+import React from "react";
+import { ToggleElement } from "../../../index";
 
 export default {
-  title: 'ControlElements/Toggle/ToggleElement',
+  title: "ControlElements/Toggle/ToggleElement",
   component: ToggleElement,
   parameters: {
     docs: {
       description: {
-        component: 'Toggle Element <br/> Expects one <code>&lt;ToggleScala&gt;</code> Element as Child.',
+        component:
+          "Toggle Element <br/> Expects one <code>&lt;ToggleScala&gt;</code> Element as Child.",
       },
     },
   },
   argTypes: {
     attribute: {
-      description: 'Attribute Name', 
+      description: "Attribute Name",
       table: {
-          type: { summary: 'string' },
+        type: { summary: "string" },
       },
-      control: { type: 'text' },
+      control: { type: "text" },
     },
     children: {
-      description: 'Content',
+      description: "Content",
       table: {
-        type: { summary: '<ToggleScala><Toggle /></ToggleScala>' },
+        type: { summary: "<ToggleScala><Toggle /></ToggleScala>" },
       },
       type: {
-          required: true 
+        required: true,
       },
       control: {
-          type: null
-      }
-    }
-  }
+        type: null,
+      },
+    },
+  },
 };
 
-
-const Template = args => <ToggleElement {...args} />;
+const Template = (args) => <ToggleElement {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};

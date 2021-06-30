@@ -1,2 +1,1 @@
-
-export { colorClasses } from '../../UpDownElement/UpDownElement.config'
+export { colorClasses } from "../../UpDownElement/UpDownElement.config";

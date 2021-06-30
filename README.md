@@ -1,10 +1,11 @@
 # Development System showcasing the design components
 
-
 Use Dev-Branch for Development !!!
+
 ## Developing
 
 Update design tokens from repository
+
 ```bash
 npm run tokens
 ```
@@ -16,12 +17,15 @@ npm run dev
 ```
 
 ## Building
+
 ```bash
 npm run build
 ```
 
 ## Publish
+
 Merge dev-Branch into main and run purge script.
+
 ```bash
 cd into ./purge
 npm install

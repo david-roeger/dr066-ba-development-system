@@ -1,80 +1,79 @@
-import React from 'react';
-import { Toggle } from '../../../../index';
-import { colorClasses } from './Toggle.config'
+import React from "react";
+import { Toggle } from "../../../../index";
+import { colorClasses } from "./Toggle.config";
 
 export default {
-  title: 'ControlElements/Toggle/SubComponents/Toggle',
+  title: "ControlElements/Toggle/SubComponents/Toggle",
   component: Toggle,
   parameters: {
     docs: {
       description: {
-        component: 'Toggle Component <br/> Must be wrapped in <code>&lt;ToggleScala&gt;</code> Component.',
+        component:
+          "Toggle Component <br/> Must be wrapped in <code>&lt;ToggleScala&gt;</code> Component.",
       },
     },
   },
   argTypes: {
     state: {
-      description: 'Toggle state', 
+      description: "Toggle state",
       table: {
-          type: { summary: 'number' },
+        type: { summary: "number" },
       },
-      control: false
+      control: false,
     },
     colorClass: {
-      description: 'Color Class (from config)', 
+      description: "Color Class (from config)",
       table: {
-          type: { summary: 'string' },
+        type: { summary: "string" },
       },
       options: Object.keys(colorClasses),
-      control: { 
-        type: 'select' 
+      control: {
+        type: "select",
       },
     },
     disabled: {
-        description: 'Disable Toggle', 
-        table: {
-          type: { summary: 'boolean' },
-        },
-        control: { 
-          type: 'boolean', 
+      description: "Disable Toggle",
+      table: {
+        type: { summary: "boolean" },
+      },
+      control: {
+        type: "boolean",
       },
     },
     callback: {
-        description: 'Callback function for onChange Event.', 
-        type: {
-            required: true 
-        },
-        table: {
-            type: { summary: 'function(value) {}' },
-        },
-        control: false
-    }
-  }
+      description: "Callback function for onChange Event.",
+      type: {
+        required: true,
+      },
+      table: {
+        type: { summary: "function(value) {}" },
+      },
+      control: false,
+    },
+  },
 };
 
-
-const Template = args => <Toggle {...args} />;
+const Template = (args) => <Toggle {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  disabled: true
+  disabled: true,
 };
 
 export const Zwave = Template.bind({});
 Zwave.args = {
-  colorClass: "zwave"
+  colorClass: "zwave",
 };
 
 export const Enocean = Template.bind({});
 Enocean.args = {
-  colorClass: "enocean"
+  colorClass: "enocean",
 };
 
 export const Zigbee = Template.bind({});
 Zigbee.args = {
-  colorClass: "zigbee"
+  colorClass: "zigbee",
 };

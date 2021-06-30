@@ -1,44 +1,43 @@
-import React from 'react';
-import { ToggleScala } from '../../../../index';
-import { scalas } from './ToggleScala.config'
+import React from "react";
+import { ToggleScala } from "../../../../index";
+import { scalas } from "./ToggleScala.config";
 
 export default {
-  title: 'ControlElements/Toggle/SubComponents/ToggleScala',
+  title: "ControlElements/Toggle/SubComponents/ToggleScala",
   component: ToggleScala,
   parameters: {
     docs: {
       description: {
-        component: 'ToggleScala Component <br/> Expects one <code>&lt;Toggle&gt;</code> Element as Child.',
+        component:
+          "ToggleScala Component <br/> Expects one <code>&lt;Toggle&gt;</code> Element as Child.",
       },
     },
   },
   argTypes: {
     scala: {
-      description: 'Toggle Scala', 
+      description: "Toggle Scala",
       table: {
-          type: { summary: 'string' },
+        type: { summary: "string" },
       },
       options: Object.keys(scalas),
-      control: { type: 'select' },
+      control: { type: "select" },
     },
     children: {
-      description: 'Content',
+      description: "Content",
       table: {
-        type: { summary: '<Toggle />' },
+        type: { summary: "<Toggle />" },
       },
       type: {
-          required: true 
+        required: true,
       },
       control: {
-          type: null
-      }
-    }
-  }
+        type: null,
+      },
+    },
+  },
 };
 
-
-const Template = args => <ToggleScala {...args} />;
+const Template = (args) => <ToggleScala {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};

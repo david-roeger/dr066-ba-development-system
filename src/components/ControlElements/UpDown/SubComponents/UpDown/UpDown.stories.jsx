@@ -1,78 +1,77 @@
-import React from 'react';
-import { UpDown } from '../../../../index';
-import { colorClasses } from './UpDown.config'
+import React from "react";
+import { UpDown } from "../../../../index";
+import { colorClasses } from "./UpDown.config";
 
 export default {
-  title: 'ControlElements/UpDown/SubComponents/UpDown',
+  title: "ControlElements/UpDown/SubComponents/UpDown",
   component: UpDown,
   parameters: {
     docs: {
       description: {
-        component: 'UpDown Component <br/> Must be wrapped in <code>&lt;UpDownElement&gt;</code> Component.',
+        component:
+          "UpDown Component <br/> Must be wrapped in <code>&lt;UpDownElement&gt;</code> Component.",
       },
     },
   },
   argTypes: {
     state: {
-      description: 'UpDown direction', 
+      description: "UpDown direction",
       table: {
-          type: { summary: 'number' },
+        type: { summary: "number" },
       },
       options: [0, 1],
-      control: { 
-        type: 'radio'
-      }
+      control: {
+        type: "radio",
+      },
     },
     colorClass: {
-      description: 'Color Class (from config)', 
+      description: "Color Class (from config)",
       table: {
-          type: { summary: 'string' },
+        type: { summary: "string" },
       },
       options: Object.keys(colorClasses),
-      control: { 
-        type: 'select' 
+      control: {
+        type: "select",
       },
     },
     active: {
-      description: 'Button active', 
+      description: "Button active",
       table: {
-        type: { summary: 'boolean' },
+        type: { summary: "boolean" },
       },
-      control: { 
-        type: 'boolean', 
+      control: {
+        type: "boolean",
       },
     },
     callback: {
-        description: 'Callback function for onClick Event.', 
-        type: {
-            required: true 
-        },
-        table: {
-            type: { summary: 'function(value) {}' },
-        },
-        control: false
-    }
-  }
+      description: "Callback function for onClick Event.",
+      type: {
+        required: true,
+      },
+      table: {
+        type: { summary: "function(value) {}" },
+      },
+      control: false,
+    },
+  },
 };
 
-
-const Template = args => <UpDown {...args} />;
+const Template = (args) => <UpDown {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-};
+Default.args = {};
 
 export const Zwave = Template.bind({});
 Zwave.args = {
-  colorClass: "zwave"
+  colorClass: "zwave",
 };
 
 export const Enocean = Template.bind({});
 Enocean.args = {
-  colorClass: "enocean"
+  colorClass: "enocean",
 };
 
 export const Zigbee = Template.bind({});
 Zigbee.args = {
-  colorClass: "zigbee"
+  colorClass: "zigbee",
 };

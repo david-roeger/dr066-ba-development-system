@@ -1,43 +1,43 @@
-import React from 'react';
-import { ValueElement, Value } from '../../../index';
+import React from "react";
+import { ValueElement, Value } from "../../../index";
 
 export default {
-  title: 'ControlElements/Value/ValueElement',
+  title: "ControlElements/Value/ValueElement",
   component: ValueElement,
   parameters: {
     docs: {
       description: {
-        component: 'UpDown Element <br/> Read Only <br/> Expects one <code>&lt;Value&gt;</code> Element as Child.'
+        component:
+          "UpDown Element <br/> Read Only <br/> Expects one <code>&lt;Value&gt;</code> Element as Child.",
       },
     },
   },
   argTypes: {
     attribute: {
-      description: 'Attribute Name', 
+      description: "Attribute Name",
       table: {
-          type: { summary: 'string' },
+        type: { summary: "string" },
       },
-      control: { type: 'text' },
+      control: { type: "text" },
     },
     children: {
-      description: 'Content',
+      description: "Content",
       table: {
-        type: { summary: '<Value></Value>' },
+        type: { summary: "<Value></Value>" },
       },
       type: {
-          required: true 
+        required: true,
       },
       control: {
-          type: null
-      }
-    }
-  }
+        type: null,
+      },
+    },
+  },
 };
 
-
-const Template = args => <ValueElement {...args} />;
+const Template = (args) => <ValueElement {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: <Value state="Value"></Value>
+  children: <Value state='Value'></Value>,
 };
