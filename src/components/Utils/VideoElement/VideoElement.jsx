@@ -29,7 +29,6 @@ export function VideoElement({ src, type }) {
 }
 
 VideoElement.defaultProps = {
-  src:
-    "https://static.videezy.com/system/resources/previews/000/013/582/original/Water_108_-_15s_-_4k_res.mp4",
+  src: "https://static.videezy.com/system/resources/previews/000/013/582/original/Water_108_-_15s_-_4k_res.mp4",
   type: "mp4",
 };

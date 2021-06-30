@@ -1,4 +1,4 @@
 export let scalas = {
-    percent: "%",
-    celsius: "°C",
+  percent: "%",
+  celsius: "°C",
 };
