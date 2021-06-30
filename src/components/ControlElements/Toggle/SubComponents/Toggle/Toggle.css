@@ -1,29 +1,29 @@
 .handle:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    top: -2px;
-    left: -2px;
-    @apply h-lg;
-    @apply w-lg;
-    @apply transition-transform;
-    @apply transform;
-    @apply border;
-    @apply rounded-full;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  top: -2px;
+  left: -2px;
+  @apply h-lg;
+  @apply w-lg;
+  @apply transition-transform;
+  @apply transform;
+  @apply border;
+  @apply rounded-full;
 
-    border-color: var(--border-color);
-    background-color: var(--base-color);
+  border-color: var(--border-color);
+  background-color: var(--base-color);
 }
 
 input:checked + .handle {
-    background-color: var(--fill-color);
+  background-color: var(--fill-color);
 }
 
 input:checked + .handle:before {
-    transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 input:disabled + .handle:before {
-    transform: translateX(12px);
+  transform: translateX(12px);
 }

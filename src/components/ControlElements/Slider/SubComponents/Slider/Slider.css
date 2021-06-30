@@ -1,58 +1,57 @@
 @-moz-document url-prefix() {
-    input[type="range"].slider {
-        background: transparent !important;
-    }
+  input[type="range"].slider {
+    background: transparent !important;
   }
+}
 
 input[type="range"].slider {
-    -webkit-appearance: none;
-    @apply w-full;
-    @apply rounded-full;
+  -webkit-appearance: none;
+  @apply w-full;
+  @apply rounded-full;
 }
 
 input[type="range"].slider::-webkit-slider-runnable-track {
-    @apply h-sm;
-    @apply w-full;
-    @apply rounded-full;
-    border: 2px solid var(--border-color);
-
+  @apply h-sm;
+  @apply w-full;
+  @apply rounded-full;
+  border: 2px solid var(--border-color);
 }
-   
+
 input[type="range"].slider::-moz-range-track {
-    @apply h-sm;
-    @apply w-full;
-    @apply rounded-full;
-    margin: 0;
-    background-color: var(--base-color);
-    border: 2px solid var(--border-color);
+  @apply h-sm;
+  @apply w-full;
+  @apply rounded-full;
+  margin: 0;
+  background-color: var(--base-color);
+  border: 2px solid var(--border-color);
 }
 
 input[type="range"].slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 
-    @apply h-lg;
-    @apply w-lg;
-    @apply rounded-full;
-    border: 2px solid var(--border-color);
-    background: white;
-    margin-top: -10px;
-   }
-   
+  @apply h-lg;
+  @apply w-lg;
+  @apply rounded-full;
+  border: 2px solid var(--border-color);
+  background: white;
+  margin-top: -10px;
+}
+
 input[type="range"].slider::-moz-range-thumb {
-    @apply h-lg;
-    @apply w-lg;
-    @apply rounded-full;
-    border: 2px solid var(--border-color);
-    background: white;
-    margin-top: -10px;
+  @apply h-lg;
+  @apply w-lg;
+  @apply rounded-full;
+  border: 2px solid var(--border-color);
+  background: white;
+  margin-top: -10px;
 }
 
 input[type="range"].slider::-moz-range-progress {
-    background-color:var(--fill-color);
-    @apply h-sm;
-    @apply rounded-full;
+  background-color: var(--fill-color);
+  @apply h-sm;
+  @apply rounded-full;
 }
-  
-  input[type="range"].slider::-moz-range-track {  
-    background-color: var(--base-color);
-  }
+
+input[type="range"].slider::-moz-range-track {
+  background-color: var(--base-color);
+}
