@@ -1,6 +1,8 @@
 # Development System showcasing the design components
 
-Use Dev-Branch for Development !!!
+<b>Use Dev-Branch for Development !!!</b>
+
+https://roeger-ba-development-system.netlify.app/
 
 ## Developing
 
@@ -29,5 +31,5 @@ Merge dev-Branch into main and run purge script.
 ```bash
 cd into ./purge
 npm install
-npm purge
+npm run purge
 ```
