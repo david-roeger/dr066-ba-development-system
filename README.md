@@ -29,5 +29,5 @@ Merge dev-Branch into main and run purge script.
 ```bash
 cd into ./purge
 npm install
-npm purge
+npm run purge
 ```
